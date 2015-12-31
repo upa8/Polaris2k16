@@ -1,6 +1,6 @@
 # Polaris2k16
-Hello , 
-Polaris is a annual technical festival of RCOEM (Ramdeobaba College of 
+Hello friends ,<br> 
+Polaris is an annual technical festival of RCOEM (Ramdeobaba College of 
 Engineering , Nagpur) CSE . This project contains a website which was 
 created for this Polaris event in 2016 . 
 
