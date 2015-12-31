@@ -1,0 +1,10 @@
+taskManager
+
+1) Move.js
+	To move objects 
+2) Textillate.js
+	To give animation to text 
+3) impress.js
+	To create online presentations 
+4) rapheal.js
+	To give more animations 
