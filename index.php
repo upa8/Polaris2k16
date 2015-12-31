@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head lang="en">
 	<meta charset="utf-8">
@@ -70,9 +71,7 @@
 			<div id="home-row-2" class="row clearfix">
 				<div class="col-12 col-sm-4">
 					<div class="home-hover navigation-slide" data-slide="4">
-						<a href="">	
-							<img src="images/s02.png">
-						</a>
+							<img onclick="location.href='presentation/index.html';" src="images/s02.png">
 					</div>
 					<span>
 						PRESENTATION
