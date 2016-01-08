@@ -13,7 +13,7 @@ class Polaris
      */
     public  $messages                 = array();
     
-    public   $total                    = 0;
+
 
     public function __construct()
     { 
@@ -38,9 +38,8 @@ class Polaris
                 return false;
             }
         }
-    }    
-    
-    public  function addStudentIntoEventTable(){
+    }
+    public function addStudentIntoEventTable(){
         // Take form details into variables 
         $name = $_POST["ename"];
         $mobile = $_POST["emobile"];
@@ -52,16 +51,45 @@ class Polaris
               $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
               $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
               $query_to_add_in_db->bindValue(':ecost' , $cost , PDO::PARAM_INT);
-              $query_to_add_in_db->execute();  
-              $this->total = $this->total+1;                           
+              $query_to_add_in_db->execute(); 
+              if ($query_achievement->rowCount() > 0) {
+
+                        $this->messages[] = "Student data added successfully!";
+
+                    } else {
+
+                        $this->errors[] = "Error in deleting  . ";
+
+              }           
+                            
         }  
     }
+
     public function deleteStudentInfoFromEventTable(){
+      $deleteId = $_POST["edeleteId"];
+       if($this->databaseConnection()){
+            $queryDelete = $this->db_connection->prepare('DELETE FROM events  WHERE eid = :deleteId');
+            $queryDelete->bindValue(':deleteId', $deleteId ,PDO::PARAM_INT);
+            $queryDelete->execute();
+            if ($queryDelete->rowCount() > 0) {
+                $this->messages[] = "Student deleted successfully!";
+            }else{
+                $this->errors[] = "Error in deleting.";
+            }           
     }
+  }
+
     public function updateStudentInforIntoEventTable(){
 
     }
 
+    public function getEventStudentData(){
+      if($this->databaseConnection()){
+          $query = $this->db_connection->prepare('select * from events');
+          $query->execute();
+          return $query;                
+      }
+    }
 }
 
 

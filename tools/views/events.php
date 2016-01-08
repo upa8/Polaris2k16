@@ -18,7 +18,7 @@
 		 	// Case 2 to delete the student from the database 
 		 	case 2: 
 		 		# code...
-		 		$Polaris->deleteStudentInforFromEventTable();
+		 		$Polaris->deleteStudentInfoFromEventTable();
 		 		break;
 		 	// Case 3 to edit the student information into the database 
 		 	case 3: 
@@ -34,38 +34,72 @@
      } 
 ?>
 
+
 <div class="row">
-	<?php
-		//$Polaris->totalStudents();
-	?>
-	<table class="table">
-	    <thead>
-	      <tr>
-	        <th>Id</th>
-	        <th>Name</th>
-	        <th>Mobile</th>
-	        <th>Cost</th>
-	        <th>Action</th>
-	      </tr>
-	    </thead>
-		<!-- Add pagination as well as -->
-	    <tbody>
-	      <tr class="success">
-	        <td>1</td>
-	        <td>Admin</td>
-	        <td>7588948588</td>
-	        <td>200</td>
-	        <td>
-	        	<button type="button" class="btn btn-info">Info</button>
-	        	<button type="button" class="btn btn-danger">Delete</button>
-	        </td>
-	      </tr>
-	      <tr class="danger">
-	      </tr>
-	      <tr class="info">
-	      </tr>
-	    </tbody>
-  </table>
+	<div class="table-responsive">
+		<table class="table">
+		    <thead>
+		      <tr>
+		        <th>Id</th>
+		        <th>Name</th>
+		        <th>Mobile</th>
+		        <th>Cost</th>
+		        <th>Action</th>
+		      </tr>
+		    </thead>
+			<!-- Add pagination as well as -->
+			<tbody>
+			<?php
+				$query = $Polaris->getEventStudentData();
+				$count = 1;
+				while($result = $query->fetchObject()){
+					$color = $count % 3;
+					switch ($color) {
+						case 0:
+							# code...
+							echo '<tr class="success">';
+							break;
+						case 1:
+							# code...
+							echo '<tr class="active">';
+							break;
+						case 2:
+							# code...
+							echo '<tr class="infor">';
+							break;
+						default:
+							# code...
+							break;
+					}
+					// Variable that we are not using here are 
+					// $result->eemail 
+
+					echo '<td>'.$count.'</td>
+						        <td>'.$result->ename.'</td>
+						        <td>'.$result->emobile.'</td>
+						        <td>'.$result->ecost.'</td>
+						        <td>
+						        	 <form role="form" action="events.php" method="POST">
+						                  <div class="form-group">
+						                    <input type="hidden" class="form-control" id="edeleteId" name="edeleteId" value='.$result->eid.'>
+						                  </div>
+						                  <div class="form-group">
+						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=2>
+						                  </div>	
+						                  <button type="button" class="btn btn-info">Info</button>
+						  	             		             
+                  							<button type="submit" class="btn btn-danger">Delete</button>
+                 					</form>
+						        
+						        </td>
+						      </tr>
+						';
+					$count++;
+				}		
+			?>	   
+			</tbody> 
+	  </table>
+  <div>
   <center>
 	  <ul class="pagination">
 	    <li class="active"><a href="#">1</a></li>
