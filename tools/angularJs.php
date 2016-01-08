@@ -19,19 +19,16 @@ require_once('libraries/PHPMailer.php');
 // load the login class
 require_once('classes/Login.php');
 
-// load the Polaris Class
-require_once('classes/Polaris.php');
-
 // create a login object. when this object is created, it will do all login/logout stuff automatically
 // so this single line handles the entire login process.
 $login = new Login();
-$Polaris = new Polaris();
 
 // ... ask if we are logged in here:
 if ($login->isUserLoggedIn() == true) {
     // the user is logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are logged in" view.
-    include("views/events.php");
+    include("views/_main_header.php");
+    include("views/angularJs.php");
 
 } else {
     // the user is not logged in. you can do whatever you want here.

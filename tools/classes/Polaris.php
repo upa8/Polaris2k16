@@ -12,14 +12,10 @@ class Polaris
      * @var array collection of success / neutral messages
      */
     public  $messages                 = array();
-    
-
-
     public function __construct()
     { 
         
     }
-
     /**
      * Checks if database connection is opened and open it if not
      */
@@ -51,17 +47,9 @@ class Polaris
               $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
               $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
               $query_to_add_in_db->bindValue(':ecost' , $cost , PDO::PARAM_INT);
+              $this->messages[] = "Student data added successfully!";
               $query_to_add_in_db->execute(); 
-              if ($query_achievement->rowCount() > 0) {
-
-                        $this->messages[] = "Student data added successfully!";
-
-                    } else {
-
-                        $this->errors[] = "Error in deleting  . ";
-
-              }           
-                            
+                                                     
         }  
     }
 
@@ -78,12 +66,11 @@ class Polaris
             }           
     }
   }
+  public function updateStudentInforIntoEventTable(){
 
-    public function updateStudentInforIntoEventTable(){
 
-    }
-
-    public function getEventStudentData(){
+  }
+  public function getEventStudentData(){
       if($this->databaseConnection()){
           $query = $this->db_connection->prepare('select * from events');
           $query->execute();

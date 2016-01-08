@@ -1,11 +1,3 @@
-<hr>
-<div class="row">
-	<div class="col-sm-11">
-	</div>
-	<div class="col-sm-1">
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addEventStudent">Add</button>
-	</div>
-</div>
 <?php 
 	if (isset($_POST["formtype"])) {
 		 $type = $_POST["formtype"];
@@ -25,16 +17,21 @@
 		 		# code...
 		 		$Polaris->updateStudentInfoInEventTable();
 		 		break;
-		 	
 		 	default:
 		 		# code...
 		 		break;
 		 }
-         
      } 
 ?>
-
-
+<?php include("views/_main_header.php");?>
+<hr>
+<div class="row">
+	<div class="col-sm-11">
+	</div>
+	<div class="col-sm-1">
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addEventStudent">Add</button>
+	</div>
+</div>
 <div class="row">
 	<div class="table-responsive">
 		<table class="table">
