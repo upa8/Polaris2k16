@@ -15,7 +15,7 @@
 		 	// Case 3 to edit the student information into the database 
 		 	case 3: 
 		 		# code...
-		 		$Polaris->updateStudentInfoInEventTable();
+		 		$Polaris->updateStudentInfoIntoEventTable();
 		 		break;
 		 	default:
 		 		# code...
@@ -76,15 +76,19 @@
 						        <td>'.$result->emobile.'</td>
 						        <td>'.$result->ecost.'</td>
 						        <td>
+
 						        	 <form role="form" action="events.php" method="POST">
 						                  <div class="form-group">
 						                    <input type="hidden" class="form-control" id="edeleteId" name="edeleteId" value='.$result->eid.'>
 						                  </div>
 						                  <div class="form-group">
 						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=2>
-						                  </div>	
-						                  <button type="button" class="btn btn-info">Info</button>
-						  	             		             
+						                  </div>
+						                  ';
+						               	  echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->eid.",\"".$result->ename."\",\"".$result->emobile."\",\"".$result->eemail."\",\"".$result->ecost."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
+						  	           			";
+						               echo '	
+						                 		             
                   							<button type="submit" class="btn btn-danger">Delete</button>
                  					</form>
 						        
@@ -108,6 +112,17 @@
   </center>
 </div>
 
+<script>
+	function updateEventStudentInfoModal(id, name , mobile , email , cost) {
+		
+	    document.getElementById("updateEnumber").value = id;
+	    document.getElementById("updateEname").value = name;
+	    document.getElementById("updateEmobile").value = mobile;
+	    document.getElementById("updateEemail").value = email;
+	    document.getElementById("updateEcost").value = cost;
+	   
+	}
+</script>
 <!-- Modals for events -->
 <?php
 	include('modals.php');

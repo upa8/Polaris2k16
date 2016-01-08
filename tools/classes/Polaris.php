@@ -66,9 +66,24 @@ class Polaris
             }           
     }
   }
-  public function updateStudentInforIntoEventTable(){
+  // Query to update the Event students 
+  public function updateStudentInfoIntoEventTable(){
 
-
+      if($this->databaseConnection()){
+          $name = $_POST["updateEname"];
+          $mobile = $_POST["updateEmobile"];
+          $email = $_POST["updateEemail"];
+          $cost = $_POST["updateEcost"];
+          $eid = $_POST["updateEnumber"];        
+          $query = $this->db_connection->prepare('UPDATE events SET ename =:ename , emobile =:emobile , eemail=:eemail,ecost=:ecost
+             where eid =:eid');
+          $query->bindValue(':eid', $eid ,PDO::PARAM_INT);
+          $query->bindValue(':ename', $name ,PDO::PARAM_STR);
+          $query->bindValue(':emobile', $mobile ,PDO::PARAM_STR);
+          $query->bindValue(':eemail', $email ,PDO::PARAM_STR);
+          $query->bindValue(':ecost', $cost ,PDO::PARAM_INT);
+          $query->execute();
+      }
   }
   public function getEventStudentData(){
       if($this->databaseConnection()){
