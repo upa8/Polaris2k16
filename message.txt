@@ -9,10 +9,15 @@ taskManager
 4) rapheal.js
 	To give more animations 
 
+
+
 Task 
+
 1) Add timer 
+
 2) Implement move.js
 	Textillate.js
 	Rapheal.js
+
 3) Use Laptop and mobile showcase for events 
 
