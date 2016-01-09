@@ -3,7 +3,7 @@
 	require_once('../config/config.php');
 	require_once('../classes/Polaris.php');
 	$Polaris = new Polaris();
-	echo $Polaris->getTotalEntries();
+	//echo $Polaris->getTotalEntries();
 	$response = array();
 	// Check todays key 
 	// This is single array response
@@ -39,13 +39,17 @@
 		$mobile = $_GET['mobile'];
 		$email = $_GET['email'];
 		$note = $_GET['note'];
-		$checkMark = $Polaris->registerAndroidUser($name , $mobile , $email ,
-			$note);
-		if($checkMark==1){
+		$event = $_GET['event'];
+		$cost = $_GET['cost'];
+		// change parameter of this method 
+		$ackn = $Polaris->registerAndroidUser($name , $mobile , $email ,$note,$event,$cost);
+		if($ackn == 1){
 			$response["success"] = 1;
 		}else{
 			$response["success"] = 0;
 		}
 	}
     echo json_encode($response);                         
+// android=1&&name=pratik&&mobile=755&&email=pratik&&note=something&&event=11110000&&cost=15
 ?>
+
