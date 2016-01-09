@@ -42,7 +42,7 @@ class Polaris
         $email = $_POST["eemail"];
         $cost = $_POST["ecost"];
         if ($this->databaseConnection()) {
-              $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO events (ename , emobile , eemail , ecost) VALUES (:ename , :emobile , :eemail , :ecost)');
+              $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO events (ename , emobile , eemail , ecost , regtime) VALUES (:ename , :emobile , :eemail , :ecost ,now())');
               $query_to_add_in_db->bindValue(':ename' , $name , PDO::PARAM_STR);
               $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
               $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
@@ -85,13 +85,27 @@ class Polaris
           $query->execute();
       }
   }
-  public function getEventStudentData(){
+  public function getTotalEntries(){
       if($this->databaseConnection()){
-          $query = $this->db_connection->prepare('select * from events');
+          $query = $this->db_connection->prepare('select count(*) from events ');
+          $query->execute();
+          $result = $query->fetchColumn();
+          return $result;                
+      }
+  }
+  public function getSelectedEventStudentData($start){
+      $start = ($start-1)*10 ;
+      $end = $start + 10;
+      if($this->databaseConnection()){
+          $query = $this->db_connection->prepare('select * from events limit :start , :end');
+          $query->bindValue(':start', $start ,PDO::PARAM_INT);
+          $query->bindValue(':end', $end ,PDO::PARAM_INT);
           $query->execute();
           return $query;                
       }
-    }
+  }
+
+
 }
 
 

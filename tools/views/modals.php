@@ -11,8 +11,11 @@
 	      </center>
 	    </div>
 	    <div class="modal-body">
-	      <form role="form" action="events.php" method="POST">
-                  <div class="form-group">
+        <?php 
+          echo '<form role="form" action="events.php?page_id='.$page_id.'" method="POST">
+        ';
+        ?>
+	                <div class="form-group">
                     <label >Name :</label>
                     <input type="text" class="form-control" id="ename" name="ename" required>
                   </div>
@@ -53,8 +56,11 @@
 	    </div>
 	    <div class="modal-body">
          <p id="id"></p>
-	      <form role="form" action="events.php" method="POST">
-                  <div class="form-group">
+	      <?php 
+          echo '<form role="form" action="events.php?page_id='.$page_id.'" method="POST">
+        ';
+        ?>
+                 <div class="form-group">
                     <label >Name :</label>
                     <input type="text" class="form-control" id="updateEname" name="updateEname">
                   </div>
@@ -78,7 +84,6 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-
 	    </div>
 	    <div class="modal-footer">
 	      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,4 +1,12 @@
 <?php 
+	$start=0;
+    $limit=10;
+    $page_id = 0;
+
+    if(isset($_GET['page_id'])){
+        $page_id=$_GET['page_id'];
+        $start=($page_id-1)*$limit;
+    }
 	if (isset($_POST["formtype"])) {
 		 $type = $_POST["formtype"];
 		 switch ($type) {
@@ -47,8 +55,10 @@
 			<!-- Add pagination as well as -->
 			<tbody>
 			<?php
-				$query = $Polaris->getEventStudentData();
-				$count = 1;
+				$rowCount = $Polaris->getTotalEntries();
+				$total = ceil($rowCount/$limit);
+				$query = $Polaris->getSelectedEventStudentData($page_id);
+				$count = ($page_id - 1)*10 + 1;
 				while($result = $query->fetchObject()){
 					$color = $count % 3;
 					switch ($color) {
@@ -76,8 +86,12 @@
 						        <td>'.$result->emobile.'</td>
 						        <td>'.$result->ecost.'</td>
 						        <td>
-
-						        	 <form role="form" action="events.php" method="POST">
+						        ';
+					  
+       					   echo '<form role="form" action="events.php?page_id='.$page_id.'" method="POST">';
+        
+       
+					echo '
 						                  <div class="form-group">
 						                    <input type="hidden" class="form-control" id="edeleteId" name="edeleteId" value='.$result->eid.'>
 						                  </div>
@@ -103,25 +117,42 @@
   <div>
   <center>
 	  <ul class="pagination">
-	    <li class="active"><a href="#">1</a></li>
-	    <li><a href="#">2</a></li>
-	    <li><a href="#">3</a></li>
-	    <li><a href="#">4</a></li>
-	    <li><a href="#">5</a></li>
+	  	<?php 
+	  	if($page_id>1)
+                {
+                  echo "<a href='?page_id=".($page_id-1)."' class='button'>PREVIOUS</a>";
+                }
+                if($page_id!=$total)
+                {
+                  echo "<a href='?page_id=".($page_id+1)."' class='button'>NEXT</a>";
+                }
+
+                echo "<ul class='page'>";
+
+                    for($i=1;$i<=$total;$i++)
+                {
+                      if($i==$page_id) { echo "<li class='active'>".$i."</li>"; }
+                      
+                      else { echo "<a href='?page_id=".$i."'>".$i."</a> "; }
+                  }
+	  	?>
+	 
 	  </ul>
   </center>
 </div>
 
 <script>
-	function updateEventStudentInfoModal(id, name , mobile , email , cost) {
-		
+	function updateEventStudentInfoModal(id, name , mobile , email , cost) {		
 	    document.getElementById("updateEnumber").value = id;
 	    document.getElementById("updateEname").value = name;
 	    document.getElementById("updateEmobile").value = mobile;
 	    document.getElementById("updateEemail").value = email;
 	    document.getElementById("updateEcost").value = cost;
-	   
 	}
+	function updatePaginationField(){
+
+	}
+
 </script>
 <!-- Modals for events -->
 <?php
