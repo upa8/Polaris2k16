@@ -105,7 +105,25 @@ class Polaris
       }
   }
 
+  // This method is used to registed into database through android 
+  public function registerAndroidUser($name,$mobile,$email,$note){
 
+          if ($this->databaseConnection()) {
+              $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO events (ename , emobile , eemail , note , regtime) VALUES (:ename , :emobile , :eemail , :note ,now())');
+              $query_to_add_in_db->bindValue(':ename' , $name , PDO::PARAM_STR);
+              $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
+              $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
+              $query_to_add_in_db->bindValue(':note' , $note , PDO::PARAM_INT);
+              //$this->messages[] = "Student data added successfully!";
+              $query_to_add_in_db->execute(); 
+              if ($query_to_add_in_db->rowCount()) {
+                    $result = 1;      
+                }else{  
+                    $result = 0; 
+              }
+          return $result;                                           
+        }             
+  }
 }
 
 
