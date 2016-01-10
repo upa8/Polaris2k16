@@ -1,52 +1,65 @@
-<?php 
-	// This is for pagination of the page 
-	$start=0;
-    $limit=10;
-    $page_id = 0;
+	<?php 
+		// This is for pagination of the page 
+		$start=0;
+	    $limit=10;
+	    $page_id = 0;
 
-    if(isset($_GET['page_id'])){
-        $page_id=$_GET['page_id'];
-        $start=($page_id-1)*$limit;
-    }
-?>
-<?	
-	// This is controller coder of our page 
-	// For college page , it will be different than 
-	// our event page   
-	// We can use this in a page and add that page 
-	// in this file to avoid redundancy 
-	if (isset($_POST["formtype"])) {
-		 $type = $_POST["formtype"];
-		 switch ($type) {
-		 	// Case 1 to add data into the database 
-		 	case 1:
-		 		# code...
-		 		$Polaris->addStudentIntoEventTable();
-		 		break;
-		 	// Case 2 to delete the student from the database 
-		 	case 2: 
-		 		# code...
-		 		$Polaris->deleteStudentInfoFromEventTable();
-		 		break;
-		 	// Case 3 to edit the student information into the database 
-		 	case 3: 
-		 		# code...
-		 		$Polaris->updateStudentInfoIntoEventTable();
-		 		break;
-		 	default:
-		 		# code...
-		 		break;
-		 }
-     }
-     //
+	    if(isset($_GET['page_id'])){
+	        $page_id=$_GET['page_id'];
+	        $start=($page_id-1)*$limit;
+	    }
+	?>
+	<?php	
+		// This is controller coder of our page 
+		// For college page , it will be different than 
+		// our event page   
+		// We can use this in a page and add that page 
+		// in this file to avoid redundancy 
+		
+		if (isset($_POST["formtype"])) {
+			 
+			 $type = $_POST["formtype"];
+			 
+			 switch ($type) {
+			 	// Case 1 to add data into the database 
+			 	case 1:
+			 		# code...
+			 		$Polaris->addStudentIntoEventTable();
+			 		break;
+			 	// Case 2 to delete the student from the database 
+			 	case 2: 
+			 		# code...
+			 		$Polaris->deleteStudentInfoFromEventTable();
+			 		break;
+			 	// Case 3 to edit the student information into the database 
+			 	case 3: 
+			 		# code...
+			 		$Polaris->updateStudentInfoIntoEventTable();
+			 		break;
+			 	case 4:
+			 		# code...
+			 		$Polaris->addStudentIntoBranchTable();
+			 		break;
+			 	case 5:
+			 		# code...
+			 		$Polaris->deleteStudentFromBranchTable();
+			 		break;
+			 	case 6:
+			 		# code...
+			 		$Polaris->updateStudentInfoIntoBranchTable();
+			 		break;
+			 	default:
+			 		# code...
+			 		break;
+			 }
+	     }
+	?>
 
-?>
+	<?php 
+		
+		include("views/_main_header.php");
 
-<?php 
-	
-	include("views/_main_header.php");
-
-?>
+	?>
 	<hr>
 	<!-- A row starts here -->
 	<div class="row">
@@ -54,7 +67,7 @@
 		</div>
 		<div class="col-sm-1">
 			<button type="button" class="btn btn-primary" data-toggle="modal" 
-					data-target="#addEventStudent">Add</button>
+					data-target="#addBranchStudent">Add</button>
 		</div>
 	</div>
 	<!-- A row ends here -->
@@ -67,10 +80,12 @@
 		    	<thead>
 		      		<tr>
 		        		<th>Id</th>
-				        <th>Name</th>
-				        <th>Year</th>
+				        <th>First Name</th>
+				        <th>Last Name</th>
 				        <th>Shift</th>
-				        <th>Status</th>
+				        <th>Year</th>
+				        <th>Mobile</th>
+				        <th>Money</th>
 				        <th>Action</th>
 		      		</tr>
 		    	</thead>
@@ -88,8 +103,9 @@
 						// So pass branch as a parameter in this function
 						// Directly get an array a result from this function
 						// So that we could just display that as a views  
-						$query = $Polaris->getSelectedEventStudentData($page_id);
-						// 
+
+						$query = $Polaris->getSelectedBranchStudentData($page_id);
+						
 						while($result = $query->fetchObject()){
 								
 								$color = $count % 3;
@@ -115,20 +131,23 @@
 							// Now change this variables into the branch and shift and year 
 
 							echo '<td>'.$count.'</td>
-						          <td>'.$result->ename.'</td>
-						          <td>'.$result->emobile.'</td>
-						          <td>'.$result->ecost.'</td>
+						          <td>'.$result->bfname.'</td>
+						          <td>'.$result->blname.'</td>
+						          <td>'.$result->bshift.'</td>
+						          <td>'.$result->byear.'</td>
+						          <td>'.$result->bmobile.'</td>
+						          <td>'.$result->bmoney.'</td>						          
 						          <td>
 						        	 <form role="form" action="college.php" method="POST">
 						                  <div class="form-group">
-						                    <input type="hidden" class="form-control" id="edeleteId" name="edeleteId" value='.$result->eid.'>
+						                    <input type="hidden" class="form-control" id="bdeleteId" name="bdeleteId" value='.$result->bid.'>
 						                  </div>
 						                  <div class="form-group">
 						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=2>
 						                  </div>
 						          ';
 						    
-						    echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->eid.",\"".$result->ename."\",\"".$result->emobile."\",\"".$result->eemail."\",\"".$result->ecost."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
+						    echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->bid.",\"".$result->bfname."\",\"".$result->bmobile."\",\"".$result->bemail."\",\"".$result->bmoney."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
 						  	     ";
 						    echo '	<button type="submit" class="btn btn-danger">Delete</button>
                  					</form>
