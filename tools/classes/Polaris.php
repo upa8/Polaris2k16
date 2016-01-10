@@ -154,22 +154,46 @@
     // Insert student into branch 
     public function addStudentIntoBranchTable(){
 
-          $name = $_POST["addFirstName"];
-          $mobile = $_POST["addMiddleName"];
-          $email = $_POST["addLastName"];
-          $cost = $_POST["addMobile"];
-          $cost = $_POST["addEmail"];
-          $cost = $_POST["addShift"];
-          $cost = $_POST["addYear"];
+          $firstName = $_POST["addFirstName"];
+          $middleName = $_POST["addMiddleName"];
+          $lastName = $_POST["addLastName"];
+          $mobile = $_POST["addMobile"];
+          $email = $_POST["addEmail"];
+          $shift = $_POST["addShift"];
+          $year = $_POST["addYear"];
           $cost = $_POST["addCost"];
 
           // Now write a query to add into database 
-               
+          if ($this->databaseConnection()) {
+                $query = $this->db_connection->prepare('INSERT INTO branch (bfname , bmname , blname , 
+                          bmobile, bemail , bshift , byear , bmoney , btime) 
+                          VALUES (:firstName , :middleName , :lastName , :bmobile ,
+                            :bemail, :bshift , :byear , :bmoney ,now())');
+                $query->bindValue(':firstName' , $firstName, PDO::PARAM_STR);
+                $query->bindValue(':middleName' , $middleName , PDO::PARAM_STR);
+                $query->bindValue(':lastName' , $lastName , PDO::PARAM_STR);
+                $query->bindValue(':bmobile' , $mobile , PDO::PARAM_STR);
+                $query->bindValue(':bemail' , $email , PDO::PARAM_STR);
+                $query->bindValue(':bshift' , $shift , PDO::PARAM_STR);
+                $query->bindValue(':byear' , $year , PDO::PARAM_STR);
+                $query->bindValue(':bmoney' , $cost, PDO::PARAM_INT);
+                
+                $query->execute(); 
+                                                           
+          }           
     }
 
     // Delete student from branch 
     public function deleteStudentFromBranchTable(){
 
+        $deleteId = $_POST["bdeleteId"];
+            
+        if ($this->databaseConnection()){
+             $queryDelete = $this->db_connection->prepare('DELETE FROM branch  WHERE bid = :deleteId');
+             $queryDelete->bindValue(':deleteId', $deleteId ,PDO::PARAM_INT);
+             $queryDelete->execute();
+            // Return something to display the we have delete the entry 
+        }
     }
 
     public function updateStudentInfoIntoBranchTable(){
@@ -187,6 +211,16 @@
             $query->bindValue(':end', $end ,PDO::PARAM_INT);
             $query->execute();
             return $query;                
+        }
+    }
+
+    // get the total entries count for pagination system 
+    public function getTotalEntriesOfBranch(){
+        if($this->databaseConnection()){
+            $query = $this->db_connection->prepare('select count(*) from branch ');
+            $query->execute();
+            $result = $query->fetchColumn();
+            return $result;                
         }
     }
 

@@ -95,7 +95,7 @@
 						//Here get the entries of branch
 						// So pass parameter as a branch in this 
 						// following function 
-						$rowCount = $Polaris->getTotalEntries();
+						$rowCount = $Polaris->getTotalEntriesOfBranch();
 						$total = ceil($rowCount/$limit);
 						$count = ($page_id - 1)*10 + 1;
 						
@@ -138,12 +138,12 @@
 						          <td>'.$result->bmobile.'</td>
 						          <td>'.$result->bmoney.'</td>						          
 						          <td>
-						        	 <form role="form" action="college.php" method="POST">
+						        	 <form role="form" action="college.php?page_id='.$page_id.'" method="POST">
 						                  <div class="form-group">
 						                    <input type="hidden" class="form-control" id="bdeleteId" name="bdeleteId" value='.$result->bid.'>
 						                  </div>
 						                  <div class="form-group">
-						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=2>
+						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=5>
 						                  </div>
 						          ';
 						    
