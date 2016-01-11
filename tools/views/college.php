@@ -147,7 +147,7 @@
 						                  </div>
 						          ';
 						    
-						    echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->bid.",\"".$result->bfname."\",\"".$result->bmobile."\",\"".$result->bemail."\",\"".$result->bmoney."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
+						    echo " <button type=\"button\" onclick='updateBranchStudentInfoModal(".$result->bid.",\"".$result->bfname."\",\"".$result->bmname."\",\"".$result->blname."\",\"".$result->bmobile."\",\"".$result->bemail."\",\"".$result->bshift."\",\"".$result->byear."\",\"".$result->bmoney."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#branchStudentInfo\">Info</button>
 						  	     ";
 						    echo '	<button type="submit" class="btn btn-danger">Delete</button>
                  					</form>
@@ -198,12 +198,16 @@
 		
 		// This is function which is used to show users information 
 		// into the modal's sections 
-		function updateEventStudentInfoModal(id, name , mobile , email , cost) {		
-		    document.getElementById("updateEnumber").value = id;
-		    document.getElementById("updateEname").value = name;
-		    document.getElementById("updateEmobile").value = mobile;
-		    document.getElementById("updateEemail").value = email;
-		    document.getElementById("updateEcost").value = cost;
+		function updateBranchStudentInfoModal(bid, bfname , bmname , blname , bmobile, bemail,bshift , byear , bmoney  ) {		
+		    document.getElementById("updateBnumber").value = bid;
+		    document.getElementById("updateBfname").value = bfname;
+		    document.getElementById("updateBmname").value = bmname;
+		    document.getElementById("updateBlname").value = blname;
+		    document.getElementById("updateBshift").value = bshift;
+		    document.getElementById("updateByear").value = byear;
+		    document.getElementById("updateBmoney").value = bmoney;
+		    document.getElementById("updateBmobile").value = bmobile;
+		    document.getElementById("updateBemail").value = bemail;
 		}
 
 	</script>

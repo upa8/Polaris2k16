@@ -1,0 +1,26 @@
+Event1 
+	Code Relay 
+Event2 
+	Crack-Jack
+Event3
+	Projet
+Event4
+	Hotheads
+Event5
+	Lords of stages
+Event6
+	Cloud on linux 
+Event7
+	SalesForce Tech
+
+Polaris email accounts 
+	
+	info@polaris2k16.in
+	password: polaris123!
+
+	event@polaris2k16.in
+
+Todo 
+1) Add college in event table 
+
+

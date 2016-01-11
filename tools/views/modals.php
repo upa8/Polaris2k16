@@ -157,7 +157,7 @@
 </div>
 
 <!-- Modal For Editing and showing details of  Student  -->
-<div class="modal fade" id="eventStudentInfo" role="dialog">
+<div class="modal fade" id="branchStudentInfo" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
@@ -168,30 +168,46 @@
       <div class="modal-body">
                 <p id="id"></p>
                 <?php 
-                  echo '<form role="form" action="college.php?page_id='.$page_id.'" method="POST">
+                    echo '<form role="form" action="college.php?page_id='.$page_id.'" method="POST">
                 ';
                 ?>
                <div class="form-group">
-                  <label >Name :</label>
-                  <input type="text" class="form-control" id="updateEname" name="updateEname">
+                  <label >First Name*</label>
+                  <input type="text" class="form-control" id="updateBfname" name="updateBfname" required>
                 </div>
                 <div class="form-group">
-                  <label >Mobile :</label>
-                  <input type="number" class="form-control" id="updateEmobile" name="updateEmobile" >
+                  <label >Middle Name :</label>
+                  <input type="text" class="form-control" id="updateBmname" name="updateBmname" >
                 </div>
                 <div class="form-group">
-                  <label >Email :</label>
-                  <input type="email" class="form-control" id="updateEemail" name="updateEemail" >
+                  <label >Last Name*</label>
+                  <input type="text" class="form-control" id="updateBlname" name="updateBlname" required>
                 </div>
                 <div class="form-group">
-                  <label >Cost :</label>
-                  <input type="number" class="form-control" id="updateEcost" name="updateEcost" >
+                  <label >Mobile*</label>
+                  <input type="text" class="form-control" id="updateBmobile" name="updateBmobile" required>
                 </div>
                 <div class="form-group">
-                  <input type="hidden" class="form-control" id="updateEnumber" name="updateEnumber">
+                  <label >Email*</label>
+                  <input type="text" class="form-control" id="updateBemail" name="updateBemail" >
                 </div>
                 <div class="form-group">
-                  <input type="hidden" class="form-control" id="formtype" name="formtype" value=3 >
+                  <label >Shift :</label>
+                  <input type="number" class="form-control" id="updateBshift" name="updateBshift">
+                </div>
+                <div class="form-group">
+                  <label >Year*</label>
+                  <input type="number" class="form-control" id="updateByear" name="updateByear">
+                </div>
+                <div class="form-group">
+                  <label >Cost*</label>
+                  <input type="number" class="form-control" id="updateBmoney" name="updateBmoney">
+                </div>
+                <div class="form-group">
+                  <input type="hidden" class="form-control" id="updateBnumber" name="updateBnumber">
+                </div>
+                <div class="form-group">
+                  <input type="hidden" class="form-control" id="formtype" name="formtype" value=6 >
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
