@@ -24,3 +24,8 @@ Todo
 1) Add college in event table 
 
 
+http://polaris2k16.in/tools/android/androidApi.php?android=1&&name=Pr&&college=ramdeobaba&&mobile=7588948588&&email=pratikupacharya&&note=two&&event=11110000&&id=polo
+
+http://localhost/Serious%20Projects/polaris2k16//tools/android/androidApi.php?android=1&&name=Pr&&college=ramdeobaba&&mobile=7588948588&&email=pratikupacharya&&note=two&&event=11110000&&cost=200&&id=polo
+
+

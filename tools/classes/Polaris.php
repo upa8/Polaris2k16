@@ -118,12 +118,12 @@
     }
 
     // This method is used to registed into database through android 
-    public function registerAndroidUser($name,$mobile,$email,$note,$event,$cost , $ecollege){
+    public function registerAndroidUser($name,$mobile,$email,$note,$event,$cost , $ecollege,$admin){
             $result = 0;
             
             if ($this->databaseConnection()) {
                 $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO events (ename , emobile , eemail , note, 
-                  event1 , event2 , event3 , event4 , event5,event6,event7,event8, ecost, ecollege, regtime) VALUES (:ename , :emobile , :eemail , :note ,:event1, :event2 , :event3 , :event4 , :event5 , :event6 , :event7,:event8,:ecost, :ecollege,now())');
+                  event1 , event2 , event3 , event4 , event5,event6,event7,event8, ecost, ecollege, whichadmin ,regtime) VALUES (:ename , :emobile , :eemail , :note ,:event1, :event2 , :event3 , :event4 , :event5 , :event6 , :event7,:event8,:ecost, :ecollege, :admin,now())');
                 $query_to_add_in_db->bindValue(':ename' , $name , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
                 $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
@@ -138,7 +138,8 @@
                 $query_to_add_in_db->bindValue(':event8' , $event[7] , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':ecost' , $cost , PDO::PARAM_INT);
                 $query_to_add_in_db->bindValue(':ecollege' , $ecollege , PDO::PARAM_STR);
-                //$this->messages[] = "Student data added successfully!";
+                $query_to_add_in_db->bindValue(':admin' , $admin , PDO::PARAM_STR);
+                
                 $query_to_add_in_db->execute(); 
                 if ($query_to_add_in_db->rowCount()) {
                       $result = 1;

@@ -42,8 +42,9 @@
 		$event = $_GET['event'];
 		$cost = $_GET['cost'];
 		$college = $_GET['college'];
+		$admin = $_GET['id'];
 		// change parameter of this method 
-		$ackn = $Polaris->registerAndroidUser($name , $mobile , $email ,$note,$event,$cost , $college);
+		$ackn = $Polaris->registerAndroidUser($name , $mobile , $email ,$note,$event,$cost , $college , $admin);
 		if($ackn == 1){
 			$response["success"] = 1;
 		}else{
