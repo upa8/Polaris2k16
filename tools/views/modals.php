@@ -1,7 +1,7 @@
 <!-- Modals For Event and College  -->
 <!-- Modal For Adding Student  -->
 <div class="modal fade" id="addEventStudent" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-lg">
 	  <!-- Modal content-->
 	  <div class="modal-content">
 	    <div class="modal-header">
@@ -47,7 +47,7 @@
 
 <!-- Modal For Editing and showing details of  Student  -->
 <div class="modal fade" id="eventStudentInfo" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-lg">
 	  <!-- Modal content-->
 	  <div class="modal-content">
 	    <div class="modal-header">
@@ -96,7 +96,7 @@
 
 <!-- Modal For Adding Student Into Branch table -->
 <div class="modal fade" id="addBranchStudent" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
@@ -158,7 +158,7 @@
 
 <!-- Modal For Editing and showing details of  Student  -->
 <div class="modal fade" id="branchStudentInfo" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
