@@ -46,12 +46,17 @@
 		// change parameter of this method 
 		$ackn = $Polaris->registerAndroidUser($name , $mobile , $email ,$note,$event,$cost , $college , $admin);
 		if($ackn == 1){
+		      $message = "You have been registered successfully in Polaris2k16";
+                      $subject = "Polaris2k16 Notifications";
+                      $Polaris->sendSms($mobile, $message);
+                      $Polaris->sendEmail($email , $message , $subject);  
+                
 			$response["success"] = 1;
 		}else{
+		
 			$response["success"] = 0;
 		}
 	}
     echo json_encode($response);                         
 // android=1&&name=pratik&&mobile=755&&email=pratik&&note=something&&event=01110000&&cost=15
 ?>
-

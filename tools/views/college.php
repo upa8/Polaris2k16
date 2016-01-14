@@ -53,7 +53,6 @@
 			 		break;
 			 }
 	     }
-	
 	?>
 
 	<?php 
@@ -98,7 +97,7 @@
 						// following function 
 						$rowCount = $Polaris->getTotalEntriesOfBranch();
 						$total = ceil($rowCount/$limit);
-						$count = ($page_id - 1)*$limit + 1;
+						$count = ($page_id - 1)*10 + 1;
 						
 						// Get the event details of the brnach student 
 						// So pass branch as a parameter in this function
