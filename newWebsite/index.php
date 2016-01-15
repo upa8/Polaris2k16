@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,7 @@
               <li><a href="#about">ABOUT US</a></li>
               <li><a href="#events">EVENTS</a></li>
               <li><a href="#workshops">WORKSHOPS</a></li>
-              <li><a href="#sponsors">SPONSOR</a></li>
+              <li><a href="#sponsors">SPONSORS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
@@ -54,8 +53,6 @@
           <div class="item active">
             <img src="img/bg1.jpg" alt="New York">
             <div class="carousel-caption">
-              <h1 class="fonty font-semibold wow rubberBand animated">POLARIS <span class="fonty font-thin wow rubberBand animated">2K16</span></h1><br/>
-          <h4 class="font-thin wow zoomInRight animated">Annual technical festival of <span class="font-semibold zoomInLeft wow rubberBand animated">COMPUTER SCIECNCE AND ENGINEERING , </span> <br>Shri Ramdeobaba College of Engineering and Management , Nagpur</h4>                  
           <!-- 
           <div class="item">
             <img src="img/bg1.jpg" alt="Chicago">
@@ -100,6 +97,12 @@
       </div>
     <!-- -->
     <!-- End corosal-->
+      
+
+    <!-- Hey akshay ,.... hi ... please design this about page 
+    Use proper fonts and color . 
+    -->
+
     <!-- Container (About Section) -->
       <div id="about" class="container-fluid">
           <div class="row">  
@@ -146,6 +149,9 @@
           </div><!-- /row -->
       </div>
     <!-- About container ends here  -->
+
+    <!-- Hey akshay ,.... hi ... niche wala page mat design kar abb , but effects dalana hoga to dal sakta he but 
+    position mat change karana  -->  
 
     <!-- Container (Services Section) -->
       <div id="sponsors" class="container-fluid">
@@ -201,6 +207,16 @@
                 <img src="img/sp9.png" class="img-thumbnail" width="100" height="70">
                 <h4>Nawabi Dawat</h4>
               </div>
+
+              <div class="col-sm-2">
+                <img src="img/sp10.png" class="img-thumbnail" width="100" height="70">
+                <h4>TIME</h4>
+              </div>
+
+              <div class="col-sm-2">
+                <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
+                <h4>REACHO</h4>
+              </div>
           </div>
             
           <!--  If we want to add more sponsors to our website 
@@ -233,33 +249,72 @@
       </div>
     <!-- About section ends here  -->
 
+    <!-- Hey akshay , niche wale page me bhi animation dal de but positions mat change kar-->
+
     <!-- Container (Portfolio Section) -->
       <div id="events" class="container-fluid text-center bg-grey">
         <h2>Events</h2><br>
         <div class="row text-center slideanim">
-          <div class="col-sm-4">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-2">
             <div class="thumbnail">
-              <img src="paris.jpg" alt="Paris" width="400" height="300">
-              <p><strong>Paris</strong></p>
-              <p>Yes, we built Paris</p>
+              <img src="img/160code.png" alt="Code Relay" >
+              <p><strong>Code Relay</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
             </div>
           </div>
-          <div class="col-sm-4">
+
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
             <div class="thumbnail">
-              <img src="newyork.jpg" alt="New York" width="400" height="300">
-              <p><strong>New York</strong></p>
-              <p>We built New York</p>
+              <img src="img/160crack.png" alt="Crack Jack">
+              <p><strong>Crack Jack</strong></p>
+                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
             </div>
           </div>
-          <div class="col-sm-4">
+
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
             <div class="thumbnail">
-              <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-              <p><strong>San Francisco</strong></p>
-              <p>Yes, San Fran is ours</p>
+              <img src="img/160hotheads.png" alt="Hot Heads" >
+              <p><strong>Hot Heads</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
             </div>
           </div>
-        </div><br>
+          <div class="col-sm-2">
+          </div>
+        </div>
+        <div class="row text-center slideanim">
+          
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/160lord.png" alt="Code Relay" >
+              <p><strong>Lord Of Stage</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/160projet.png" alt="Crack Jack">
+              <p><strong>Projet</strong></p>
+                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
+      </div> 
+        <br>
     <!-- Container ends here  -->
+
+    <!-- Ye page me bhi animation dal de  -->
     <!-- Workshop container starts here -->
       <div id="workshops" class="container-fluid">
         <div class="text-center">
@@ -313,10 +368,10 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Hey akshay </h4>
               </div>
               <div class="modal-body">
-                <p>This is a large modal.</p>
+                <p>I am writing all this modals , so do not worry about this .</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -331,10 +386,11 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Hey akshay </h4>
               </div>
               <div class="modal-body">
-                <p>This is a large modal.</p>
+                
+                <p>I am writing all this modals , so do not worry about this .</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -344,6 +400,9 @@
         </div>
       </div>
     <!-- End Workshop details here -->
+    
+    <!-- Hey akshay , ye contact page ko bhi design kar teri taraf se . -->
+
       <!-- Container (Contact Section) -->
       <div id="contact" class="container-fluid bg-grey">
         <h2 class="text-center">CONTACT</h2>
