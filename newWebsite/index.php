@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Polaris2k16</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  <!-- Website styling-->
-  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
-    
-</head>
+  <head>
+      <title>Polaris2k16</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+      <!-- Website styling-->
+      <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+      <style> 
+
+      </style>    
+  </head>
 <body id="myCarousel" data-spy="scroll" data-target=".navbar" data-offset="60">
 
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -53,6 +55,8 @@
           <div class="item active">
             <img src="img/bg1.jpg" alt="New York">
             <div class="carousel-caption">
+            </div>
+          </div>
           <!-- 
           <div class="item">
             <img src="img/bg1.jpg" alt="Chicago">
@@ -110,7 +114,7 @@
                 <h1> <strong> About Polaris </strong></h1>
               </center>
               <h4>
-               
+             
                 Polaris is a national level event which started off as a small branch level occurrence for the 
                 students .Since its inception 7 years ago, Polaris has only grown in its stature and its importance .Year after year, new measures have been taken up to raise Polaris to the top of the tomb .
                 Coming under CSI from 2015, Polaris is now a national level event. Polaris includes many events of foremost importance for upcoming academic marvels .
@@ -256,6 +260,7 @@
         <h2>Events</h2><br>
         <div class="row text-center slideanim">
           <div class="col-sm-2">
+
           </div>
           <div class="col-sm-2">
             <div class="thumbnail">
@@ -307,7 +312,7 @@
                   <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
             </div>
           </div>
-          <div class="col-sm-2">
+
           </div>
         </div>
       </div> 

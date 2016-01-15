@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 'node'
+  - '4'
+  - '0.12'
+branches:
+  only:
+    - gh-pages
+    - /^.*$/
+sudo: false
