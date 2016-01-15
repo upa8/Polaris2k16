@@ -26,4 +26,6 @@ if (isset($name) && isset($mail) && isset($message)) {
 }else{
 	echo '0';
 }
+
+
 ?>

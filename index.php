@@ -167,7 +167,7 @@
 					</div><!-- /col12 -->
 				</div><!-- /row -->
 			</div><!-- /container -->
-		</div><!-- /slide2 -->
+		</div><!-- About ends -->
 		
 		<!-- EVENT SHOWCASE -->
 		<!-- === SLide 3 - Portfolio -->

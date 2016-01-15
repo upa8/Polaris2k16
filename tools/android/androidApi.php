@@ -9,7 +9,10 @@
 	// This is single array response
 	if(isset($_GET['key'])){
 		$key = $_GET['key'];
-		if($key == "polo"){
+
+
+		if($key == "mario" || $key == "dave" || $key == "wolf" || $key == "contra" || $key == "roadrash" || $key == "matrix"
+		  || $key == "fifa" || $key == "smackdown" || $key == "godofwar" || $key == "pacman" || $key == "pinball" || $key == "superman" || $key == "batman" ){
 			$response["success"] = 1;
 		}else{
 			$response["success"] = 0;
@@ -47,9 +50,9 @@
 		$ackn = $Polaris->registerAndroidUser($name , $mobile , $email ,$note,$event,$cost , $college , $admin);
 		if($ackn == 1){
 		      $message = "You have been registered successfully in Polaris2k16";
-                      $subject = "Polaris2k16 Notifications";
-                      $Polaris->sendSms($mobile, $message);
-                      $Polaris->sendEmail($email , $message , $subject);  
+              $subject = "Polaris2k16 Notifications";
+              $Polaris->sendSms($mobile, $message);
+              $Polaris->sendEmail($email , $message , $subject);  
                 
 			$response["success"] = 1;
 		}else{
@@ -59,4 +62,26 @@
 	}
     echo json_encode($response);                         
 // android=1&&name=pratik&&mobile=755&&email=pratik&&note=something&&event=01110000&&cost=15
+
+/*
+	Passwords : 
+
+	1)mario
+	2)dave
+	3)wolf
+	4)contra
+	5)roadrash
+	6)matrix
+	7)fifa
+	8)smackdown
+	9)godofwar
+	10)pacman
+	11)pinball
+	12)superman
+	13)batman
+
+
+*/
+
 ?>
+

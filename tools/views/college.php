@@ -199,6 +199,7 @@
 		// This is function which is used to show users information 
 		// into the modal's sections 
 		function updateBranchStudentInfoModal(bid, bfname , bmname , blname , bmobile, bemail,bshift , byear , bmoney  ) {		
+		    
 		    document.getElementById("updateBnumber").value = bid;
 		    document.getElementById("updateBfname").value = bfname;
 		    document.getElementById("updateBmname").value = bmname;
@@ -208,6 +209,7 @@
 		    document.getElementById("updateBmoney").value = bmoney;
 		    document.getElementById("updateBmobile").value = bmobile;
 		    document.getElementById("updateBemail").value = bemail;
+		
 		}
 
 	</script>
