@@ -15,7 +15,8 @@
   
   <!-- Website styling-->
   <link rel="stylesheet" href="css/style.css" rel="stylesheet">
-    
+  <!-- Animations -->
+  <link rel="stylesheet" href="css/customeAnimation.css" rel="stylesheet">    
 </head>
 <body id="myCarousel" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -107,55 +108,55 @@
     -->
 
     <!-- Container (About Section) -->
-      <div id="slide-2" class="container-fluid" >
-          <div class="row wow bounceInDown">  
-              <center>
-                <h1 class="font-light"> <strong> About Polaris </strong></h1>
-              </center>
-              <div class="row line-row">
-              <div class="hr1">&nbsp;</div><br/>
-            </div>
-              <br/>
-              <div class="wow bounceInUp animated">
-        <div class="col-12 font-thin"><span style="font-size:20px;">Polaris is a national level event which started off as a small branch level occurrence for the 
-          students .Since its inception 7 years ago, Polaris has only grown in its stature and its importance .Year after year, new measures have been taken up to raise Polaris to the top of the tomb .
-          Coming under CSI from 2015, Polaris is now a national level event. Polaris includes many events of foremost importance for upcoming academic marvels .
-          Last year, we organised Android and Photoshop workshops .Also, Polaris hosts many events year 
-          by year which raise the technical level of a student .Many technical events such as Code Relay, Crack-Jack have been organised over the years which have been fun to participate in 
-          and also helped to raise the technical profile of the entire spectrum.</span></div>
-      </div><!-- /row -->
-      
-      <div class="row subtitle-row">
-        <div class="col-12 font-thin wow rubberBand animated"><center>Following are key <span class="font-semibold">points </span></center></div>
-        <div class="row line-row">
-        <div class="hr">&nbsp;</div>
-      </div><!-- /row -->
-      </div><!-- /row -->
-      
-      <div class="row content-row">
-        <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
-          <p><i class="icon icon-user"></i></p>
-          <h2 class="font-thin">INTELLIGENT <span class="font-semibold icon">LECTURES </span></h2>
-          <h4 class="font-thin">Learn from industry experts the mantra's of technology</h4>
-        </div><!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
-          <p><i class="icon icon-code"></i></p>
-          <h2 class="font-thin">TECHNICAL <br/><span class="font-semibold">EVENTS </span></h2>
-          <h4 class="font-thin">Various coding events comprising in groups</h4>
-        </div><!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
-          <p><i class="icon icon-keyboard"></i></p>
-          <h2 class="font-thin">LATEST <span class="font-semibold">TECHNOLOGY </span></h2>
-          <h4 class="font-thin">You will get to know about latest technology through workshops</h4>
-        </div><!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
-          <p><i class="icon icon-magic"></i></p>
-          <h2 class="font-thin">FUN AND <span class="font-semibold"> ENJOYMENT  </h2>
-          <h4 class="font-thin">Comprises of events like hot heads and cultural night (DJ and Refreshment) </h4>
-        </div><!-- /col12 -->
-      </div><!-- /row -->
+        <div id="slide-2" class="container-fluid" >
+            <div class="row wow bounceInDown">  
+                <center>
+                  <h1 class="font-light"> <strong> About Polaris </strong></h1>
+                </center>
+                <div class="row line-row">
+                <div class="hr1">&nbsp;</div><br/>
+              </div>
+                <br/>
+                <div class="wow bounceInUp animated">
+          <div class="col-12 font-thin"><span style="font-size:20px;">Polaris is a national level event which started off as a small branch level occurrence for the 
+            students .Since its inception 7 years ago, Polaris has only grown in its stature and its importance .Year after year, new measures have been taken up to raise Polaris to the top of the tomb .
+            Coming under CSI from 2015, Polaris is now a national level event. Polaris includes many events of foremost importance for upcoming academic marvels .
+            Last year, we organised Android and Photoshop workshops .Also, Polaris hosts many events year 
+            by year which raise the technical level of a student .Many technical events such as Code Relay, Crack-Jack have been organised over the years which have been fun to participate in 
+            and also helped to raise the technical profile of the entire spectrum.</span></div>
+        </div><!-- /row -->
+        
+        <div class="row subtitle-row">
+          <div class="col-12 font-thin wow rubberBand animated"><center>Following are key <span class="font-semibold">points </span></center></div>
+          <div class="row line-row">
+          <div class="hr">&nbsp;</div>
+        </div><!-- /row -->
+        </div><!-- /row -->
+        
+        <div class="row content-row">
+          <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
+            <p><i class="icon icon-user"></i></p>
+            <h2 class="font-thin">INTELLIGENT <span class="font-semibold icon">LECTURES </span></h2>
+            <h4 class="font-thin">Learn from industry experts the mantra's of technology</h4>
+          </div><!-- /col12 -->
+          <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
+            <p><i class="icon icon-code"></i></p>
+            <h2 class="font-thin">TECHNICAL <br/><span class="font-semibold">EVENTS </span></h2>
+            <h4 class="font-thin">Various coding events comprising in groups</h4>
+          </div><!-- /col12 -->
+          <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
+            <p><i class="icon icon-keyboard"></i></p>
+            <h2 class="font-thin">LATEST <span class="font-semibold">TECHNOLOGY </span></h2>
+            <h4 class="font-thin">You will get to know about latest technology through workshops</h4>
+          </div><!-- /col12 -->
+          <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
+            <p><i class="icon icon-magic"></i></p>
+            <h2 class="font-thin">FUN AND <span class="font-semibold"> ENJOYMENT  </h2>
+            <h4 class="font-thin">Comprises of events like hot heads and cultural night (DJ and Refreshment) </h4>
+          </div><!-- /col12 -->
+        </div><!-- /row -->
+      </div>
     </div>
-  </div>
 
     <!-- About container ends here  -->
 
@@ -171,6 +172,9 @@
                     <br/>
               <div class="row text-center slideanim">
                 <div class="col-sm-2">
+                  <div id="myMario">
+                    <img src="img/mario.png">
+                  </div>
                 </div>
                 <div class="col-sm-2">
                   <div class="thumbnail wow rotateInLeft animated" data-wow-delay="0.13s">
@@ -238,50 +242,59 @@
                     
                   </div>
                   <div class="modal-body">
-                    <p >Code Relay </p>
-                    <p>
-                      Paired up in two, one races around the code and the other does the brainstroming. The event is held in 
+                    <div class="container">
+                      <div class="row">
+                        
+                        <div class="col-sm-8">
+                          <center>
+                            <h1>Code Relay</h1>
+                            <hr>
+                          </center>
+                          <p>
+                              Paired up in two, one races around the code and the other does the brainstroming. 
+                              The event is held in association with the Computer Society of India.
+                          </p>
+                          <p>
+                            Competition will be conducted in 2 rounds.
+                          </p>
+                          <p>
+                            <strong>Round 1(Elimination)-</strong>
 
-                      association with the Computer Society of India.
-
-                      Competition will be conducted in 2 rounds.
-
-                      Round 1(Elimination) – 
-
-                      Round will proceed under two legs. 
-
-                      1st Leg: 1st participant becomes the coder & the other participant writes the test ; 2nd leg : It’s the 
-
-                      palindrome of the 1st Leg
-
-                      Round 2 (Final)– 
-
-                      One of the participants is given a Problem statement and has to solve as much as possible in the 
-
-                      specified time. As the time limit ends, the partner in waiting comes in to complete the incomplete code. 
-
-                      Simultaneously, the 1st  participant who forwarded the 1st question, gets another question to code, again 
-
-                      in a specified time. When the 2nd participant completes the 1st question, he is forwarded the second 
-
-                      question to complete. Whosever completes both the questions soon wins the relay!
-
-                      Rules – 
-
-                      1. The Team can consist of maximum 2 participants.
-
-                      2. Problem statement will given only at the time of the event.
-
-                      Time: 
-
-                      Entry fees: Rs. 150/- per team
-
-                      Prizes worth Rs. 6000/-
-
-                      Email: events.polaris@gmail.com
-
-                      Contact: Shivang Gupta (8698074444)
-                    </p>
+                            Round will proceed under two legs. 
+                            <br>
+                            1st Leg: 1st participant becomes the coder & the other participant writes the test ;
+                            <br>
+                            2nd leg : It’s the palindrome of the 1st Leg
+                          </p>
+                          <p>
+                            <strong> Round 2 (Final) -</strong>
+                            One of the participants is given a Problem statement and has to solve as much as possible in the 
+                            specified time. As the time limit ends, the partner in waiting comes in to complete the incomplete code. 
+                            Simultaneously, the 1st  participant who forwarded the 1st question, gets another question to code, again 
+                            in a specified time. When the 2nd participant completes the 1st question, he is forwarded the second 
+                            question to complete. Whosever completes both the questions soon wins the relay!
+                          </p>
+                          <p>
+                            <strong>Rules-</strong>
+                            <br>
+                            1 . The team can consist of maximum 2 participants. <br>
+                            2. Problem statement will given only at the time of the event.
+                           </p>
+                           <p>
+                            <strong>Time : </strong>
+                            <br>      
+                            <strong>Entry fees :</strong> Rs. 150/- per team
+                            <br>
+                            <strong>Prizes worth Rs. 6000/-</strong>
+                            <br>
+                            <strong>Email :</strong> info@polaris2k16.in
+                            <br>
+                            <strong>Contact :</strong> Shivang Gupta (8698074444)
+                           </p>
+                        </div>
+                        
+                      </div>
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -298,32 +311,69 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 >CrackJack </h4>
+                    
                   </div>
                   <div class="modal-body">
+
+                      <center>
+                        <h1>Crack Jack</h1>
+                        <hr>
+                      </center>
                     <p>Crack Jack...The technical event.. Sounds Interesting??
                         Yesssss!!! It is....How can just a biscuit's name be associated with an technical event??
                         here comes the secret...(Krack Jack...The more you eat is the more you want..!)
                         Similar comes with our event....the more u get into the levels ...the more u want to win!!
                         All u need  is to crack the entire puzzle using a password hidden within the question and jump to next level...
                         And the surprise round and wonderful prizes are waiting for you!
-
-                        Event Description:
-                        1. It is a password-cracking contest.
-                        2. The Game consists of 2 rounds. 
+                    </p>
+                     <p>
+                      <strong>Event Description :</strong>
+                      <ul>
+                        <li>
+                            It is a password-cracking contest.                       
+                        </li>
+                        <li>
+                        The Game consists of 2 rounds. 
                         Round 1 has 15 levels and Round 2 will be surprise flash game.
-                        3. The team (maximum 5 members per team) need to guess the password in a level using the 
+                        </li>
+                        <li>
+                           The team (maximum 5 members per team) need to guess the password in a level using the 
                         provided images or audios or videos.
-                        4.Hints will be provided after a specific time for all the questions.
-                        5.There will be no time limit for any question.
-                        6 Team that cracks all the passwords and complete the game first will be the winner.
-                        7. First 3 teams will be awarded with a cash prize.
-
-                        Heads:
+                        </li>
+                        <li>
+                          Hints will be provided after a specific time for all the questions.
+                        </li>
+                        <li>
+                            There will be no time limit for any question.
+                        </li>
+                        <li>
+                           Team that cracks all the passwords and complete the game first will be the winner.
+                        </li>
+                      </ul>
+                     </p>   
+                     <p>
+                      <strong>Heads :</strong>
+                      <br>
+                      <ul>
+                        <li>
                         1.Rashmi Jakhotiya
-                        2.Prajakta Yerpude
-                        3.Shikha Pandey
-                      </p>
+                        </li>
+                        <li>
+                        2.Prajakta Yerpude (+91 8551050878)
+                        </li>
+                        <li>
+                          3.Shikha Pandey (+91 7276103775) 
+                        </li>
+                      </ul>
+                      <strong>Time : </strong>
+                      <br>      
+                      <strong>Entry fees :</strong> Rs. 200/- per team
+                      <br>
+                      <strong>Prizes worth Rs. 4000/-</strong>
+                      <br>
+                      <strong>Email :</strong> info@polaris2k16.in
+                      <br>
+                     </p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -332,7 +382,7 @@
               </div>
             </div>
 
-                        <!-- Modal for Hot Heads  -->
+            <!-- Modal for Hot Heads  -->
             <div class="modal fade" id="hotHeadsModal" role="dialog">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -341,16 +391,34 @@
                     
                   </div>
                   <div class="modal-body">
-                    <p>Hot Heads </p>
+                    <center>
+                      <h1>Hot Heads </h1>
+                      <hr>
+                    </center>
+                    
                     <p>
                       A team centred series of rounds to check your physical and mental abilities . 
                       Game comprises of 5 rounds , one who dares makes it to final .
                       Team of 4 with atleast one girl or one boy . 
-                      Entry fee : 200 (team of 4)
-                      Email: info@polaris2k16.in
-                      Contact : Shubham Murarka +91 8087870490
-                                Rajat Maheshwari +91 8237455797
-                    </p>
+                    </p>  
+                    <p>
+                      <strong>Time : </strong>
+                      <br>
+                      <strong>Entry fee :</strong> 200 (team of 4)
+                      <br>
+                      <strong>Email :</strong> info@polaris2k16.in
+                      <br>
+                      <strong>Contact :</strong> 
+                              <ul>
+                                <li>
+                                  Shubham Murarka (+91 8087870490)
+                                </li>
+                                <li>
+                                  Rajat Maheshwari (+91 8237455797)
+                                </li>
+                              </ul>
+                    </p>  
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -368,7 +436,13 @@
                     
                   </div>
                   <div class="modal-body">
-                    <p >Lord Of Stage </p>
+                    <center>
+                      <h1>
+                        Lord Of Stage 
+                      </h1>
+                      <hr>
+                    </center>
+                    
                     <p>
                       Lord of Stage is a literary event which is being organised in Polaris for the first time .This event aims
 
@@ -379,16 +453,21 @@
                       them in the short term in terms of the literary cup but also in the long term in terms of their 
 
                       placements.  
-
-                      Event Details:
-
-                      Singles Entry: 50
-
-                      Doubles Entry:  100
-
-                      Venue: IT BLOCK
-
-                      Contact:  Kaustubh Risodkar- 8411095281
+                    </p>
+                    <p>
+                      <strong>
+                        Event Details:
+                      </strong>
+                      <br>
+                      <strong> Single Entry :  </strong> 50
+                      <br>
+                      <strong> Doubles Entry :</strong> 100
+                      <br>
+                      <strong> Venue : </strong> IT BLOCK 
+                      <br>
+                      <strong>Email : </strong> info@polaris2k16.in
+                      <br>
+                      <strong>Contact :</strong> Kaustubh Risodkar - (+91 8411095281)
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -407,35 +486,42 @@
                     
                   </div>
                   <div class="modal-body">
-                    <p>projet</p>
+                    <center>
+                      <h1>
+                        Projet
+                      </h1>
+                      <hr>
+                    </center>
                     <p> 
                       Certification and prize by Global Logic & Computer Society of India.
-
-                      About – Hardware & Software
-
+                      <br>
+                      <strong>
                       Details – 
-
-                      1. Application and Project details to be sent 5 days prior to the event through mail.
-
-                      2. 
-
-                      3. An acceptance letter will be issued.
-
-                      4. Project has to be in executable form.
-
-                      5. Stall will be provided along with a plug point.
-
-                      6. Participants have to bring their own equipments.
-
-                       Time:  29th January 2016
-
-                      Entry fees: Rs. 500/- 
-
-                      Prizes worth Rs. 15000/-
-
-                      Email: events.polaris@gmail.com
-
-                      Contact: Shivang Gupta (8698074444)
+                      </strong>
+                      <br>
+                      <ul>
+                        <li>
+                          Application and Project details to be sent 5 days prior to the event through mail.
+                        </li>
+                        <li>
+                          An acceptance letter will be issued.
+                        </li>
+                        <li>
+                          Project has to be in executable form.
+                        </li>
+                        <li>
+                          Stall will be provided along with a plug point.
+                        </li>
+                        <li>
+                          Participants have to bring their own equipments.
+                        </li>
+                      </ul>
+                      <br>
+                      <strong>Time :</strong>  29th January 2016 <br>
+                      <strong>Entry fees: </strong> Rs. 500/- <br>
+                      <strong>Prizes worth Rs. 15000/-</strong><br>
+                      <strong>Email :</strong>info@polaris2k16.in<br>
+                      <strong>Contact :</strong> (+91 7588948588)
                     </p>  
                   </div>
                   <div class="modal-footer">
@@ -484,7 +570,7 @@
                     </div>
                     <div class="panel-body text">
                       <p><strong>Short Desciption :</strong>
-                       A very common item found in programming job descriptions is familiarity with Linux. Adoption of Linux is on an upward trend, and there are no signs to show that will change anytime soon.</p>
+                       A very common item found in programming job descriptions is familiarity with Linux.</p>
         
                       <p><strong>Time : </strong> 27 Jan 2016</p> 
                       <p><strong>Email : </strong> info@polaris2k16.in</p>
@@ -505,10 +591,19 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 >SalesForce </h4>
+                    
                   </div>
                   <div class="modal-body">
-                    <p>What is Sales Force?
+                    <center>
+                      <h1>
+                        SaleForce
+                      </h1>
+                      <hr>
+                    </center>
+                    <p>
+
+                      <strong>What is Sales Force?</strong>
+                      <br>
 
                       Salesforce is a Customer Relationship Management (CRM) system that runs in the cloud. CRM 
 
@@ -516,7 +611,11 @@
 
                       customers.
 
-                      Why Sales force?
+                      <br>
+                      <strong>
+                        Why Sales force?
+                      </strong>
+                      <br>
 
                       It's flexible and can integrate with other cloud based systems like accounting systems and email 
 
@@ -525,26 +624,29 @@
                       It is the most demanded Cloud Computing software out there right now and is used by plenty 
 
                       MNCs!
-
+                      <br>
+                      <strong>
                       What do YOU learn?
-
+                      </strong>
+                      <br>
                       You learn what is out there trending in the IT world right now!
 
                       Gain lead over others and be benifited.
-
-                      About the Workshop – 
+                      <br>
+                      <strong>
+                        About the Workshop – 
+                      </strong>
+                      <br>
 
                       Participants will be taught how to work on the Sales Force Cloud Computing software, right from the 
-
                       installation to the mastery of Cloud Computing
-
-                      Time: 
-
-                      Entry fees: Rs. 150/- per team
-
-                      Email: info@polaris2k16.in
-
-                      Contact: Shivang Gupta (8698074444)
+                      <strong>Time :</strong> 27 January 2016 
+                      <br>
+                      <strong>Entry fees :</strong> Rs. 150/- per team
+                      <br>
+                      <strong>Email :</strong> info@polaris2k16.in
+                      <br>
+                      <strong>Contact :</strong> Shivang Gupta (+91 8698074444)
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -560,93 +662,74 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 >Linux</h4>
+                    
                   </div>
                   <div class="modal-body">
+                    
+                      <center>
+                        <h1>
+                          <h4 >Linux</h4>
+                        </h1>
+                        <br>
+                      </center>
+                      <br>                      
                     <p>
-                      LINUX
-
+                      <center>
                       "If you want to travel around the world and be invited to speak at a lot of different places, just 
 
                       write a Unix operating system." (By Linus Torvalds)
+                      </center>
+                      <br>
+                      <ul>
+                        <li>
+                              One OS to rule them all.
+                        </li>
+                        <li>
+                              One OS to find them.
+                        </li>
+                        <li>
+                              One OS to call them all.
+                        </li>
+                        <li>
 
-                      One OS to rule them all,
+                          One OS to call them all,
+                        </li>
+                        <li>
+                          And in salvation bind them.
 
-                      One OS to find them.
+                        </li>
+                        <li>
+                            In the bright land of Linux,
+                        </li>    
+                        <li>
+                          Where the hackers play.
+                          <br><strong>- J. Scott Thayer</strong>
+                        </li>
+                      </ul>
 
-                      One OS to call them all,
 
-                      And in salvation bind them.
-
-                      In the bright land of Linux,
-
-                      Where the hackers play.
-
-                      - J. Scott Thayer
-
-                      What is LINUX?
-
+                      <strong>What is LINUX?</strong>
+                      <br>
                       Linux is a free and open source software Unix-like operating system for computers.
 
                       The development of Linux is one of the most prominent examples of free and open-source software 
 
                       collaboration.
+                      <br>
 
-                      Why LINUX?
-
+                      <strong>Why LINUX?</strong>
+                      <br>
                       A very common item found in programming job descriptions is familiarity with Linux. Adoption of Linux 
-
                       is on an upward trend, and there are no signs to show that will change anytime soon.
-
                       It's a different OS, with different design-philosophies, a different structure, different goals - even if you 
-
                       never look at its source-code, you could still find inspiration in how all the famous and countless other 
-
                       tools magically work together (the UNIX philosophy of "do one thing, well").
-
-                      About the Workshop – 
-
-                      Learn Programming on Linux like never before!
-
-                      PYTHON
-
-                      "Python's a drop-in replacement for BASIC in the sense that Optimus Prime is a drop-in 
-
-                      replacement for a truck." 
-
-                      - Cory Dodt
-
-                      Python, an open source programming language has been made to both look good and be easy 
-
-                      to read. 
-
-                      What is Python?
-
-                      Python is a good programming language for beginners. It is a high-level language, which means a 
-
-                      programmer can focus on what to do instead of how to do it. Writing programs in Python takes less time 
-
-                      than in another language.
-
-                      Why do we need it?
-
-                      Python is a "glue" language, and with Java, they make an excellent combination.
-
-                      You can become productive in Python fairly quickly even as a beginner, yet it is powerful 
-
-                      enough for professionals. 
-
-                      The “easy” way to do a thing in Python is usually right for the most common use-case. ;) 
-
-                      Time: 
-
-                      Entry fees: Rs. 150/- per team
-
-                      Email: info@polaris2k16.in
-
-                      Contact: Shivang Gupta (8698074444)
+                      <br>
+                      <strong>Time :</strong>Time: 27 January 2016<br>
+                      <strong>Entry fees :</strong> Rs. 150/- per team<br>
+                      <strong>Email :</strong>info@polaris2k16.in<br>
+                      <strong>Contact :</strong>Shivang Gupta (+91 8698074444)<br>
                     </p>
-                    <p></p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -656,6 +739,7 @@
             </div>
           </div>
         <!-- End Workshop details here -->
+          
           <!-- Container ends here  -->
           <div id="sponsors" class="container-fluid">
                 <center>
@@ -669,29 +753,36 @@
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-2">
+                      <a href="https://www.globallogic.com/press-releases/globallogic-opens-new-centre-in-nagpur/" target="_blank">
                       <img src="img/sp1.png" class="img-thumbnail" width="100" height="70">
                       <h4>Global Logic </h4>
+                      </a>
                       
                     </div>
                     <div class="col-sm-2">
+                      <a href="http://www.pristineinfotech.co.in" target="_blank">
                       <img src="img/sp2.png" class="img-thumbnail" width="100" height="70">
                       <h4>Pristine Infotech</h4>
-                      
+                      </a>
                     </div>
-                    
                     <div class="col-sm-2">
+                      
                       <img src="img/sp6.png" class="img-thumbnail" width="100" height="70">
                       <h4>Concourse</h4>
                       
                     </div>
                     <div class="col-sm-2">
-                      <img src="img/sp3.png" class="img-thumbnail" width="100" height="70">
-                      <h4>Persistent</h4>
+                      <a href="http://www.persistent.com/" target="_blank">
+                        <img src="img/sp3.png" class="img-thumbnail" width="100" height="70">
+                        <h4>Persistent</h4>
+                      </a>
                     </div>
 
                     <div class="col-sm-2">
-                      <img src="img/sp4.png" class="img-thumbnail" width="100" height="70">
-                      <h4>UBER</h4>
+                      <a href="https://www.uber.com/" target="_blank">
+                        <img src="img/sp4.png" class="img-thumbnail" width="100" height="70">
+                        <h4>UBER</h4>
+                      </a>
                     </div>
                     <div class="col-sm-1">
                     </div> 
@@ -721,8 +812,10 @@
                     </div>
 
                     <div class="col-sm-2">
-                      <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
-                      <h4>REACHO</h4>
+                      <a href="http://www.reacho.in/" target="_blank">
+                        <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
+                        <h4>REACHO</h4>
+                      </a>
                     </div>
                     <div class="col-sm-1">
                     </div>
@@ -785,86 +878,57 @@
                 </div>
               </div>
             </div>
+
+          <footer class="container-fluid text-center">
+            <a href="#myCarousel" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
             <!-- 
-            <div id="googleMap" style="height:400px;width:100%;"></div>
+              <p>Website  <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>    
             -->
-    <!-- Add Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <!-- Add Google Maps -->
-        <script>
-        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+          </footer>
 
-        function initialize() {
-        var mapProp = {
-          center:myCenter,
-          zoom:12,
-          scrollwheel:false,
-          draggable:false,
-          mapTypeId:google.maps.MapTypeId.ROADMAP
-          };
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+          <script>
+                        new WOW().init();
+          </script>
 
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links in navbar + footer link
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-        var marker = new google.maps.Marker({
-          position:myCenter,
-          });
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-        marker.setMap(map);
-        }
+                // Store hash
+                var hash = this.hash;
 
-        google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 900, function(){
+               
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              });
+              
+              // Slide in elements on scroll
+              $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                  var pos = $(this).offset().top;
 
-      <footer class="container-fluid text-center">
-        <a href="#myCarousel" title="To Top">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <!-- 
-          <p>Website  <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>    
-        -->
-      </footer>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-      <script>
-                    new WOW().init();
-      </script>
-
-      <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links in navbar + footer link
-          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 900, function(){
-           
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          });
-          
-          // Slide in elements on scroll
-          $(window).scroll(function() {
-            $(".slideanim").each(function(){
-              var pos = $(this).offset().top;
-
-              var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                  $(this).addClass("slide");
-                }
-            });
-          });
-        })
-      </script>
+                  var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                      $(this).addClass("slide");
+                    }
+                });
+              });
+            })
+          </script>
 
 </body>
 </html>
