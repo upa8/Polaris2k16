@@ -6,17 +6,38 @@ body {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: #FFFFFF;
     font-weight: 600;
     margin-bottom: 30px;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: #FFFFFF;
     font-weight: 400;
     margin-bottom: 30px;
+    font-family: "Titillium Web", "Lucida Grande", sans-serif;
+    text-align: center;
 }  
+.ar{
+    color: black;
+}
+.font-thin {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+}
+
+.font-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+}
+
+.font-light {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+}
 .jumbotron {
     background-color: #f4511e;
     color: #fff;
@@ -29,6 +50,9 @@ h4 {
 .bg-grey {
     background-color: #f6f6f6;
 }
+.text{
+    color: black;
+}
 .logo-small {
     color: #f4511e;
     font-size: 50px;
@@ -38,9 +62,11 @@ h4 {
     font-size: 200px;
 }
 .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
+    padding: 40px 10px 35px 0;
+    border-width: 6px;
+    border-color: black;
+    border-radius: 8px;
+    background-color: #99CCCC;
 }
 .thumbnail img {
     width: 100%;
@@ -63,6 +89,7 @@ h4 {
     font-weight: 400;
     font-style: italic;
     margin: 70px 0;
+    font-family: 
 }
 .item span {
     font-style: normal;
@@ -71,7 +98,9 @@ h4 {
     border: 1px solid #f4511e; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
+   
 }
+
 .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
@@ -89,6 +118,13 @@ h4 {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {background-color: #FF6633;}
+    to {background-color: #FF9933;}
 }
 .panel-footer {
     background-color: white !important;
@@ -100,11 +136,22 @@ h4 {
     color: #aaa;
     font-size: 14px;
 }
-.panel-footer .btn {
+.panel-footer{
     margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
+    background-color: #FF6633;
+    color: #FF6633;
 }
+
+.btn{
+    background-color: #336666;
+}
+
+.btn1{
+    background-color: #D9853B;
+    border-color: black;
+    color:#fff;
+}
+
 .navbar {
     margin-bottom: 0;
     background-color: #f4511e;
@@ -175,6 +222,94 @@ footer .glyphicon {
       font-size: 150px;
   }
 }
+
+#slide-2 {
+    background-color: #1abc9c;
+    color: #e4e6e5;
+    padding-top: 90px;
+    text-align: center;
+}
+
+#slide-3 {
+    background-color: #558C89;
+    color: #e4e6e5;
+    padding-top: 90px;
+    text-align: center;
+}
+
+#slide-4 {
+    background-color: #D9853B;
+    color: #e4e6e5;
+    padding-top: 90px;
+    text-align: center;
+}
+
+
+
+.title-row {
+        font-size: 45px;
+        padding-bottom: 50px;
+    }
+    
+    .line-row .hr {
+        background-color: #e4e6e5;
+        height: 5px;
+        margin: 0 auto;
+        width: 30%;
+    }
+    .hr1{
+        background-color: #e4e6e5;
+        height: 5px;
+        margin: 0 auto;
+        width: 20%;
+    }
+    .hr2{
+        background-color: #e4e6e5;
+        height: 5px;
+        margin: 0 auto;
+        width: 12%;
+    }
+    .hr3{
+        background-color: #e4e6e5;
+        height: 5px;
+        margin: 0 auto;
+        width: 15%;
+    }
+
+    .subtitle-row {
+        font-size: 35px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+    .content-row {
+        padding-top: 45px;
+    }
+    
+    .content-row i,
+    #about-row-5 i {
+        display: block;
+        margin: 0 auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .content-row h2 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+    
+    .content-row h4 {
+        font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    i {
+        font-size: 80px;
+        color: white;
+        text-align: center;
+    }
 
 
 /* Changes for carousel*/

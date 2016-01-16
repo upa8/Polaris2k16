@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <title>Polaris2k16</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-      <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      
-      <!-- Website styling-->
-      <link rel="stylesheet" href="css/style.css" rel="stylesheet">
-      <style> 
+<head>
+  <title>Polaris2k16</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-      </style>    
-  </head>
+  
+  <!-- Website styling-->
+  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+    
+</head>
 <body id="myCarousel" data-spy="scroll" data-target=".navbar" data-offset="60">
 
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -30,9 +31,9 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">ABOUT US</a></li>
-              <li><a href="#events">EVENTS</a></li>
-              <li><a href="#workshops">WORKSHOPS</a></li>
+              <li><a href="#slide-2">ABOUT US</a></li>
+              <li><a href="#slide-3">EVENTS</a></li>
+              <li><a href="#slide-4">WORKSHOPS</a></li>
               <li><a href="#sponsors">SPONSORS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -55,8 +56,6 @@
           <div class="item active">
             <img src="img/bg1.jpg" alt="New York">
             <div class="carousel-caption">
-            </div>
-          </div>
           <!-- 
           <div class="item">
             <img src="img/bg1.jpg" alt="Chicago">
@@ -108,63 +107,230 @@
     -->
 
     <!-- Container (About Section) -->
-      <div id="about" class="container-fluid">
-          <div class="row">  
+      <div id="slide-2" class="container-fluid" >
+          <div class="row wow bounceInDown">  
               <center>
-                <h1> <strong> About Polaris </strong></h1>
+                <h1 class="font-light"> <strong> About Polaris </strong></h1>
               </center>
-              <h4>
-             
-                Polaris is a national level event which started off as a small branch level occurrence for the 
-                students .Since its inception 7 years ago, Polaris has only grown in its stature and its importance .Year after year, new measures have been taken up to raise Polaris to the top of the tomb .
-                Coming under CSI from 2015, Polaris is now a national level event. Polaris includes many events of foremost importance for upcoming academic marvels .
-              
-              </h4><br>
-              <p>            
-                Last year, we organised Android and Photoshop workshops .Also, Polaris hosts many events year 
-                by year which raise the technical level of a student .Many technical events such as Code Relay, Crack-Jack have been organised over the years which have been fun to participate in 
-                and also helped to raise the technical profile of the entire spectrum.
-              </p>
-            </div>        
-          <div class="row">
-            <center><strong><h1>Following are key points</h1></strong></center>
-            <hr>
-          </div>
-          <div class="row">
-              <div class="col-sm-3">
-              <p><i class="icon icon-user"></i></p>
-              <h2 >INTELLIGENT LECTURES </h2>
-              <h4 >Learn from industry experts the mantra's of technology</h4>
-            </div><!-- /col12 -->
-            <div class="col-sm-3">
-              <h2 >TECHNICAL EVENTS </h2>
-              <h4 >Various coding events comprising in groups</h4>
-            </div><!-- /col12 -->
-            <div class="col-sm-3">
-              
-              <h2 >LATEST TECHNOLOGY </h2>
-              <h4 >You will get to know about latest technology through workshops</h4>
-            </div><!-- /col12 -->
-            <div class="col-sm-3" >
-              
-              <h2 >FUN AND ENJOYMENT  </h2>
-              <h4 >Comprises of events like hot heads and cultural night (DJ and Refreshment) </h4>
-            </div><!-- /col12 -->
-          </div><!-- /row -->
-      </div>
+              <div class="row line-row">
+              <div class="hr1">&nbsp;</div><br/>
+            </div>
+              <br/>
+              <div class="wow bounceInUp animated">
+        <div class="col-12 font-thin"><span style="font-size:20px;">Polaris is a national level event which started off as a small branch level occurrence for the 
+          students .Since its inception 7 years ago, Polaris has only grown in its stature and its importance .Year after year, new measures have been taken up to raise Polaris to the top of the tomb .
+          Coming under CSI from 2015, Polaris is now a national level event. Polaris includes many events of foremost importance for upcoming academic marvels .
+          Last year, we organised Android and Photoshop workshops .Also, Polaris hosts many events year 
+          by year which raise the technical level of a student .Many technical events such as Code Relay, Crack-Jack have been organised over the years which have been fun to participate in 
+          and also helped to raise the technical profile of the entire spectrum.</span></div>
+      </div><!-- /row -->
+      
+      <div class="row subtitle-row">
+        <div class="col-12 font-thin wow rubberBand animated"><center>Following are key <span class="font-semibold">points </span></center></div>
+        <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      </div><!-- /row -->
+      
+      <div class="row content-row">
+        <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
+          <p><i class="icon icon-user"></i></p>
+          <h2 class="font-thin">INTELLIGENT <span class="font-semibold icon">LECTURES </span></h2>
+          <h4 class="font-thin">Learn from industry experts the mantra's of technology</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
+          <p><i class="icon icon-code"></i></p>
+          <h2 class="font-thin">TECHNICAL <br/><span class="font-semibold">EVENTS </span></h2>
+          <h4 class="font-thin">Various coding events comprising in groups</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp animated" data-wow-delay="0.8s">
+          <p><i class="icon icon-keyboard"></i></p>
+          <h2 class="font-thin">LATEST <span class="font-semibold">TECHNOLOGY </span></h2>
+          <h4 class="font-thin">You will get to know about latest technology through workshops</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6 wow fadeInDown animated" data-wow-delay="0.8s">
+          <p><i class="icon icon-magic"></i></p>
+          <h2 class="font-thin">FUN AND <span class="font-semibold"> ENJOYMENT  </h2>
+          <h4 class="font-thin">Comprises of events like hot heads and cultural night (DJ and Refreshment) </h4>
+        </div><!-- /col12 -->
+      </div><!-- /row -->
+    </div>
+  </div>
+
     <!-- About container ends here  -->
 
     <!-- Hey akshay ,.... hi ... niche wala page mat design kar abb , but effects dalana hoga to dal sakta he but 
     position mat change karana  -->  
 
-    <!-- Container (Services Section) -->
-      <div id="sponsors" class="container-fluid">
+    
+<div id="slide-3" class="container-fluid text-center bg-grey">
+        <h1 class="font-light wow rubberBand animated" data-wow-delay="0.6s"><strong>Events</strong></h1>
+        <div class="row line-row">
+              <div class="hr2">&nbsp;</div><br/>
+        </div>
+              <br/>
+        <div class="row text-center slideanim">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail wow rotateInLeft animated" data-wow-delay="0.13s">
+              <img src="img/160code.png" alt="Code Relay" >
+              <p class="ar flipInX"><strong>Code Relay</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail wow zoomInUp animated" data-wow-delay="0.8s">
+              <img src="img/160crack.png" alt="Crack Jack">
+              <p class="ar flipInY"><strong>Crack Jack</strong></p>
+                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail wow rotateInRight animated" data-wow-delay="0.13s">
+              <img src="img/160hotheads.png" alt="Hot Heads" >
+              <p class="ar flipInX"><strong>Hot Heads</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
+        <div class="row text-center slideanim">
+          
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail ar wow zoomInLeft animated" data-wow-delay="0.13s">
+              <img src="img/160lord.png" alt="Code Relay" >
+              <p class="ar flipInY"><strong>Lord Of Stage</strong></p>
+              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-2">
+            <div class="thumbnail ar wow zoomInRight animated" data-wow-delay="0.13s">
+              <img src="img/160projet.png" alt="Crack Jack">
+              <p class="ar flipInX"><strong>Projet</strong></p>
+                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
+      </div> 
+    <!-- About section ends here  -->
+
+    <!-- Hey akshay , niche wale page me bhi animation dal de but positions mat change kar-->
+<!-- Ye page me bhi animation dal de  -->
+    <!-- Workshop container starts here -->
+      <div id="slide-4" class="container-fluid">
+        <div class="text-center">
+          <h1 class="font semibold wow fadeInUp animated" data-wow-delay="0.9s">Workshops</h1>
+            <div class="row line-row">
+              <div class="hr3">&nbsp;</div><br/>
+            </div>
+              <br/>
+        </div>
+        <div class="row slideanim">
+          <div class="col-sm-6 col-xs-12">
+            <div class="panel panel-default myDIV text-center wow zoomInLeft animated" data-wow-delay="0.15s">
+              <div class="panel-heading">
+                <h1>SalesForce</h1>
+              </div>
+              <div class="panel-body text">
+                <p><strong>Short Desciption :</strong> Participants will be taught how to work on the Sales Force Cloud Computing software, 
+                    right from the installation to the mastery of Cloud Computing .</p>
+                <p><strong>Time : </strong> 27 Jan 2016</p> 
+                <p><strong>Email : </strong> info@polaris2k16.in</p>
+                <p><strong>Number : </strong> +91 7588948588</p>
+              </div>
+              <div class="panel-footer text">
+                <h3>400/-</h3>
+                <h4>2 days</h4>
+                  <button class="btn1 btn-lg" data-toggle="modal" data-target="#linuxModal">More</button>
+              </div>
+            </div>      
+          </div>     
+          <div class="col-sm-6 col-xs-12">
+            <div class="panel panel-default myDIV text-center wow zoomInRight animated" data-wow-delay="0.15s">
+              <div class="panel-heading">
+                <h1>Linux(Python scripting)</h1>
+              </div>
+              <div class="panel-body text">
+                <p><strong>Short Desciption :</strong>
+                 A very common item found in programming job descriptions is familiarity with Linux. Adoption of Linux is on an upward trend, and there are no signs to show that will change anytime soon.</p>
+  
+                <p><strong>Time : </strong> 27 Jan 2016</p> 
+                <p><strong>Email : </strong> info@polaris2k16.in</p>
+                <p><strong>Number : </strong> +91 7588948588</p>
+              </div>
+              <div class="panel-footer text">
+                <h3>400/-</h3>
+                <h4>2 days</h4>
+                <button class="btn1 btn-lg" data-toggle="modal" data-target="#linuxModal">More</button>
+              </div>
+            </div>      
+          </div>           
+        </div>
+
+        <!-- Modal for salesforce  -->
+        <div class="modal fade" id="salesForceModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Hey akshay </h4>
+              </div>
+              <div class="modal-body">
+                <p>I am writing all this modals , so do not worry about this .</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal for linux  -->
+        <div class="modal fade" id="linuxModal" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Workshop details here -->
+    <!-- Container ends here  -->
+    <div id="sponsors" class="container-fluid">
           <center>
-              <h2>Our Sponsors</h2>
-              <h4>We are grateful to our following sponsors</h4>
+                <h1 class="font-light"> <strong> Our Sponsors </strong></h1>
           </center>
-          <br>
+
+          <div class="row line-row">
+          <div class="hr1">&nbsp;</div><br/>
+          
           <div class="row ">
+              <div class="col-sm-1">
+              </div>
               <div class="col-sm-2">
                 <img src="img/sp1.png" class="img-thumbnail" width="100" height="70">
                 <h4>Global Logic </h4>
@@ -189,14 +355,14 @@
               <div class="col-sm-2">
                 <img src="img/sp4.png" class="img-thumbnail" width="100" height="70">
                 <h4>UBER</h4>
-              </div> 
-              <div class="col-sm-2">
-                <img src="img/sp6.png" class="img-thumbnail" width="100" height="70">
-                <h4>Concourse</h4>
               </div>
+              <div class="col-sm-1">
+              </div> 
           </div>
           <br><br>
           <div class="row">
+              <div class="col-sm-1">
+              </div>
               <div class="col-sm-2">
                 <img src="img/sp7.png" class="img-thumbnail" width="100" height="70">
                 <h4>Universe</h4>
@@ -220,6 +386,8 @@
               <div class="col-sm-2">
                 <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
                 <h4>REACHO</h4>
+              </div>
+              <div class="col-sm-1">
               </div>
           </div>
             
@@ -251,160 +419,6 @@
           </div>
         <!-- Sponsor Modal Ends here  -->
       </div>
-    <!-- About section ends here  -->
-
-    <!-- Hey akshay , niche wale page me bhi animation dal de but positions mat change kar-->
-
-    <!-- Container (Portfolio Section) -->
-      <div id="events" class="container-fluid text-center bg-grey">
-        <h2>Events</h2><br>
-        <div class="row text-center slideanim">
-          <div class="col-sm-2">
-
-          </div>
-          <div class="col-sm-2">
-            <div class="thumbnail">
-              <img src="img/160code.png" alt="Code Relay" >
-              <p><strong>Code Relay</strong></p>
-              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-            </div>
-          </div>
-
-          <div class="col-sm-1">
-          </div>
-          <div class="col-sm-2">
-            <div class="thumbnail">
-              <img src="img/160crack.png" alt="Crack Jack">
-              <p><strong>Crack Jack</strong></p>
-                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-            </div>
-          </div>
-
-          <div class="col-sm-1">
-          </div>
-          <div class="col-sm-2">
-            <div class="thumbnail">
-              <img src="img/160hotheads.png" alt="Hot Heads" >
-              <p><strong>Hot Heads</strong></p>
-              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-            </div>
-          </div>
-          <div class="col-sm-2">
-          </div>
-        </div>
-        <div class="row text-center slideanim">
-          
-          <div class="col-sm-2">
-          </div>
-          <div class="col-sm-2">
-            <div class="thumbnail">
-              <img src="img/160lord.png" alt="Code Relay" >
-              <p><strong>Lord Of Stage</strong></p>
-              <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-            </div>
-          </div>
-          <div class="col-sm-1">
-          </div>
-          <div class="col-sm-2">
-            <div class="thumbnail">
-              <img src="img/160projet.png" alt="Crack Jack">
-              <p><strong>Projet</strong></p>
-                  <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-            </div>
-          </div>
-
-          </div>
-        </div>
-      </div> 
-        <br>
-    <!-- Container ends here  -->
-
-    <!-- Ye page me bhi animation dal de  -->
-    <!-- Workshop container starts here -->
-      <div id="workshops" class="container-fluid">
-        <div class="text-center">
-          <h2>Workshops</h2>
-        </div>
-        <div class="row slideanim">
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-              <div class="panel-heading">
-                <h1>SalesForce</h1>
-              </div>
-              <div class="panel-body">
-                <p><strong>Short Desciption :</strong> Participants will be taught how to work on the Sales Force Cloud Computing software, 
-                    right from the installation to the mastery of Cloud Computing .</p>
-                <p><strong>Time : </strong> 27 Jan 2016</p> 
-                <p><strong>Email : </strong> info@polaris2k16.in</p>
-                <p><strong>Number : </strong> +91 7588948588</p>
-              </div>
-              <div class="panel-footer">
-                <h3>400/-</h3>
-                <h4>2 days</h4>
-                <button class="btn btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
-              </div>
-            </div>      
-          </div>     
-          <div class="col-sm-6 col-xs-12">
-            <div class="panel panel-default text-center">
-              <div class="panel-heading">
-                <h1>Linux(Python scripting)</h1>
-              </div>
-              <div class="panel-body">
-                <p><strong>Short Desciption :</strong>
-                 A very common item found in programming job descriptions is familiarity with Linux. Adoption of Linux is on an upward trend, and there are no signs to show that will change anytime soon.</p>
-  
-                <p><strong>Time : </strong> 27 Jan 2016</p> 
-                <p><strong>Email : </strong> info@polaris2k16.in</p>
-                <p><strong>Number : </strong> +91 7588948588</p>
-              </div>
-              <div class="panel-footer">
-                <h3>400/-</h3>
-                <h4>2 days</h4>
-                <button class="btn btn-lg" data-toggle="modal" data-target="#linuxModal">More</button>
-              </div>
-            </div>      
-          </div>           
-        </div>
-
-        <!-- Modal for salesforce  -->
-        <div class="modal fade" id="salesForceModal" role="dialog">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Hey akshay </h4>
-              </div>
-              <div class="modal-body">
-                <p>I am writing all this modals , so do not worry about this .</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal for linux  -->
-        <div class="modal fade" id="linuxModal" role="dialog">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Hey akshay </h4>
-              </div>
-              <div class="modal-body">
-                
-                <p>I am writing all this modals , so do not worry about this .</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- End Workshop details here -->
     
     <!-- Hey akshay , ye contact page ko bhi design kar teri taraf se . -->
 
@@ -416,7 +430,7 @@
             <p>Contact us </p>
             <p><span class="glyphicon glyphicon-map-marker"></span> Shri Ramdeobaba College Of Engineering And Management <br>Nagpur, India</p>
             <p><span class="glyphicon glyphicon-phone"></span> +91 7588948588</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> info@polaris2k16.in</p>	   
+            <p><span class="glyphicon glyphicon-envelope"></span> info@polaris2k16.in</p>    
           </div>
           <div class="col-sm-7 slideanim">
             <div class="row">
@@ -432,7 +446,7 @@
               <div class="col-sm-12 form-group">
                 <button class="btn btn-default pull-right" type="submit">Send</button>
               </div>
-            </div>	
+            </div>  
           </div>
         </div>
       </div>
@@ -471,7 +485,7 @@
           <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
         <!-- 
-          <p>Website  <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>		
+          <p>Website  <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>    
         -->
       </footer>
 
