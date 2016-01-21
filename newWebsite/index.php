@@ -544,7 +544,7 @@
                     <br/>
               </div>
               <div class="row slideanim">
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-sm-4 col-xs-12">
                   <div class="panel panel-default myDIV text-center wow zoomInLeft animated" data-wow-delay="0.15s">
                     <div class="panel-heading">
                       <h1>SalesForce</h1>
@@ -562,8 +562,28 @@
                         <button class="btn1 btn-lg" data-toggle="modal" data-target="#salesForceModal">More</button>
                     </div>
                   </div>      
-                </div>     
-                <div class="col-sm-6 col-xs-12">
+                </div>  
+                <div class="col-sm-4 col-xs-12">
+                  <div class="panel panel-default myDIV text-center wow zoomInLeft animated" data-wow-delay="0.15s">
+                    <div class="panel-heading">
+                      <h1>Android</h1>
+                    </div>
+                    <div class="panel-body text">
+                      <p><strong>Short Desciption :</strong> Android application development workshop will be conducted by Global logic. Android is trending in industry , and will rule in near future. Hurry up !!! Limited Entries</p>
+                      <p><strong>Time : </strong> 27 Jan 2016</p> 
+                      <p><strong>Email : </strong> info@polaris2k16.in</p>
+                      <p><strong>Number : </strong> +91 7588948588</p>
+                    </div>
+                    <div class="panel-footer text">
+                      <h3>400/-</h3>
+                      <h4>2 days</h4>
+                      
+                        <button class="btn1 btn-lg" data-toggle="modal" data-target="#androidModal">More</button>
+                    
+                    </div>
+                  </div>      
+                </div>   
+                <div class="col-sm-4 col-xs-12">
                   <div class="panel panel-default myDIV text-center wow zoomInRight animated" data-wow-delay="0.15s">
                     <div class="panel-heading">
                       <h1>Linux(Python scripting)</h1>
@@ -584,7 +604,44 @@
                   </div>      
                 </div>           
               </div>
+            </div> 
 
+            <!-- Android modal starts here -->
+            <!-- Modal for salesforce  -->
+            <div class="modal fade" id="androidModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <center>
+                      <h1>
+                        Android
+                      </h1>
+                      <hr>
+                    </center>
+                    <p>
+                      Participants will be taught how to build android applications from scratch by experts from Global logic .                     
+                      <br>
+                      <strong>Time :</strong> 27 January 2016 
+                      <br>
+                      <strong>Entry fees :</strong> Rs. 400/- per team
+                      <br>
+                      <strong>Email :</strong> info@polaris2k16.in
+                      <br>
+                      <strong>Contact :</strong> Shivang Gupta (+91 8698074444)
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <!-- Android modal ends here-->
             <!-- Modal for salesforce  -->
             <div class="modal fade" id="salesForceModal" role="dialog">
               <div class="modal-dialog modal-lg">
@@ -642,7 +699,7 @@
                       installation to the mastery of Cloud Computing
                       <strong>Time :</strong> 27 January 2016 
                       <br>
-                      <strong>Entry fees :</strong> Rs. 150/- per team
+                      <strong>Entry fees :</strong> Rs. 400/- 
                       <br>
                       <strong>Email :</strong> info@polaris2k16.in
                       <br>
@@ -655,7 +712,7 @@
                 </div>
               </div>
             </div>
-            
+           
             <!-- Modal for linux  -->
             <div class="modal fade" id="linuxModal" role="dialog">
               <div class="modal-dialog modal-lg">
@@ -668,11 +725,11 @@
                     
                       <center>
                         <h1>
-                          <h4 >Linux</h4>
+                          Linux
                         </h1>
-                        <br>
+                        
                       </center>
-                      <br>                      
+                      <hr>                      
                     <p>
                       <center>
                       "If you want to travel around the world and be invited to speak at a lot of different places, just 
@@ -726,7 +783,7 @@
                       tools magically work together (the UNIX philosophy of "do one thing, well").
                       <br>
                       <strong>Time :</strong>Time: 27 January 2016<br>
-                      <strong>Entry fees :</strong> Rs. 150/- per team<br>
+                      <strong>Entry fees :</strong> Rs. 400/- per team<br>
                       <strong>Email :</strong>info@polaris2k16.in<br>
                       <strong>Contact :</strong>Shivang Gupta (+91 8698074444)<br>
                     </p>
@@ -737,7 +794,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          
         <!-- End Workshop details here -->
           
           <!-- Container ends here  -->
@@ -748,79 +805,148 @@
 
                 <div class="row line-row">
                 <div class="hr1">&nbsp;</div><br/>
-                
+                       
+                <div class= "row">
+                  <center>
+                    <h1>Industry Partners</h1>
+                  </center>
+                </div>
                 <div class="row ">
                     <div class="col-sm-1">
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <a href="https://www.globallogic.com/press-releases/globallogic-opens-new-centre-in-nagpur/" target="_blank">
                       <img src="img/sp1.png" class="img-thumbnail" width="100" height="70">
                       <h4>Global Logic </h4>
                       </a>
                       
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <a href="http://www.pristineinfotech.co.in" target="_blank">
                       <img src="img/sp2.png" class="img-thumbnail" width="100" height="70">
                       <h4>Pristine Infotech</h4>
                       </a>
                     </div>
-                    <div class="col-sm-2">
-                      
-                      <img src="img/sp6.png" class="img-thumbnail" width="100" height="70">
-                      <h4>Concourse</h4>
-                      
-                    </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <a href="http://www.persistent.com/" target="_blank">
                         <img src="img/sp3.png" class="img-thumbnail" width="100" height="70">
                         <h4>Persistent</h4>
                       </a>
                     </div>
-
-                    <div class="col-sm-2">
-                      <a href="https://www.uber.com/" target="_blank">
-                        <img src="img/sp4.png" class="img-thumbnail" width="100" height="70">
-                        <h4>UBER</h4>
-                      </a>
+                    <div class="col-sm-1.5">
                     </div>
-                    <div class="col-sm-1">
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <center>
+                        <h1>Knowledge Partner</h1>
+                      </center>
+
+                      <div class="col-sm-1">
+                      </div>
+                      <div class="col-sm-10">
+                      
+                      <img src="img/sp12.png" class="img-thumbnail" width="100" height="70">
+                      <h4>TCS</h4>
+                      
+                      </div>
+
+                      <div class="col-sm-1">
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <center>
+                        <h1>Official Wheels</h1>
+                      </center>
+
+                      <div class="col-sm-1">
+                      </div>
+                      <div class="col-sm-10">
+                      
+                      <img src="img/sp8.png" class="img-thumbnail" width="100" height="70">
+                      <h4>Official Wheels</h4>
+                      </div>
+                      <div class="col-sm-1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <center>
+                        <h1>Education Partners</h1>
+                      </center>
+
+                      <div class="col-sm-1">
+                      </div>
+                      <div class="col-sm-10">
+                      
+                      <img src="img/sp6.png" class="img-thumbnail" width="100" height="70">
+                      <h4>Concourse</h4>
+                      </div>
+                      <div class="col-sm-1">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <center>
+                          <h1>Mobility Partner</h1>
+                        </center>
+
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
+                        
+                        <a href="https://www.uber.com/" target="_blank">
+                          <img src="img/sp4.png" class="img-thumbnail" width="100" height="70">
+                          <h4>UBER</h4>
+                        </a>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <center>
+                           <h1>Food Partners</h1>
+                        </center>
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
+                          <img src="img/sp9.png" class="img-thumbnail" width="100" height="70">
+                          <h4>Concourse</h4>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <center>
+                          <h1>Social Media Partner</h1>
+                        </center>
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
+                          <a href="http://www.reacho.in/" target="_blank">
+                            <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
+                            <h4>Reacho</h4>
+                          </a>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                      </div>
                     </div> 
                 </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-2">
-                      <img src="img/sp7.png" class="img-thumbnail" width="100" height="70">
-                      <h4>Universe</h4>
-                    </div>
-
-                    <div class="col-sm-2">
-                      <img src="img/sp8.png" class="img-thumbnail" width="100" height="70">
-                      <h4>Provincial</h4>
-                    </div>
-
-                    <div class="col-sm-2">
-                      <img src="img/sp9.png" class="img-thumbnail" width="100" height="70">
-                      <h4>Nawabi Dawat</h4>
-                    </div>
-
-                    <div class="col-sm-2">
-                      <img src="img/sp10.png" class="img-thumbnail" width="100" height="70">
-                      <h4>TIME</h4>
-                    </div>
-
-                    <div class="col-sm-2">
-                      <a href="http://www.reacho.in/" target="_blank">
-                        <img src="img/sp11.png" class="img-thumbnail" width="100" height="70">
-                        <h4>REACHO</h4>
-                      </a>
-                    </div>
-                    <div class="col-sm-1">
-                    </div>
-                </div>
-                  
+                <br><br>  
                 <!--  If we want to add more sponsors to our website 
                   <div class="row">
                     
