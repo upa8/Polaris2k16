@@ -45,18 +45,47 @@
           // Take form details into variables 
           // Avoid sql injections 
           $name = $_POST["ename"];
+          $collegeName = $_POST["ecname"];
           $mobile = $_POST["emobile"];
-          $email = $_POST["eemail"];
-          $cost = $_POST["ecost"];
-          
+          $mobile       = isset($_POST['emobile']) ?   $_POST['emobile']  :NULL;
+          //$email = $_POST["eemail"];
+          $email       = isset($_POST['eemail']) ?   $_POST['eemail']  :NULL;
+          $cost = 500;//$_POST["ecost"];
+          $event1       = isset($_POST['event1']) ?   $_POST['event1']  :0;
+          $event2       = isset($_POST['event2']) ?   $_POST['event2']  :0;
+          $event3       = isset($_POST['event3']) ?   $_POST['event3']  :0;
+          $event4       = isset($_POST['event4']) ?   $_POST['event4']  :0;
+          $event5       = isset($_POST['event5']) ?   $_POST['event5']  :0;
+          $event6       = isset($_POST['event6']) ?   $_POST['event6']  :0;
+          $event7       = isset($_POST['event7']) ?   $_POST['event7']  :0;
+          $event8       = isset($_POST['event8']) ?   $_POST['event8']  :0;
+          $note       = isset($_POST['enote']) ?   $_POST['enote']  :NULL;
+          // Write logic to calculate cost of the events 
+
+          // Logic ends here of calculating cost 
+
           if ($this->databaseConnection()) {
                 $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO 
-                          events (ename , emobile , eemail , ecost , regtime) 
-                          VALUES (:ename , :emobile , :eemail , :ecost ,now())');
+                          events (ename , emobile , eemail , ecost ,ecollege , note,event1 , event2 ,event3 ,event4
+                           ,event5 ,event6 ,   event7 ,event8  ,regtime) 
+                          VALUES (:ename , :emobile , :eemail , :ecost , :ecollege ,:note,
+                            :event1 , :event2 ,:event3 ,:event4
+                           ,:event5 ,:event6 ,   :event7 ,:event8 ,now())');
                 $query_to_add_in_db->bindValue(':ename' , $name , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
                 $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':ecost' , $cost , PDO::PARAM_INT);
+                // Adding new parameters 
+                $query_to_add_in_db->bindValue(':ecollege' , $collegeName , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':note' , $note , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event1' , $event1 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event2' , $event2 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event3' , $event3 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event4' , $event4 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event5' , $event5 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event6' , $event6 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event7' , $event7 , PDO::PARAM_STR);
+                $query_to_add_in_db->bindValue(':event8' , $event8 , PDO::PARAM_STR);
                 $query_to_add_in_db->execute();                                                      
                 // Return something to display that we are done with adding user 
           }  
