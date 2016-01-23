@@ -15,25 +15,54 @@
                 echo '<form role="form" action="events.php?page_id='.$page_id.'" method="POST">
                       ';
             ?>
-              <div class="form-group">
-                <label >Name :</label>
-                <input type="text" class="form-control" id="ename" name="ename" required>
+            <!-- Row starts here --> 
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label >Name :</label>
+                  <input type="text" class="form-control" id="ename" name="ename" required>
+                </div>
+                <div class="form-group">
+                  <label > College Name :</label>
+                  <input type="text" class="form-control" id="ecname" name="ecname" required>
+                </div>
               </div>
-              <div class="form-group">
-                <label >Mobile :</label>
-                <input type="number" class="form-control" id="emobile" name="emobile" required>
+              <div class="col-sm-4">
+
+                <div class="form-group">
+                  <label >Mobile :</label>
+                  <input type="number" class="form-control" id="emobile" name="emobile" required>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" value="1" name="event1">Code Relay</label>
+                  <label><input type="checkbox" value="1" name="event2">Crack-Jack</label>
+                  <label><input type="checkbox" value="1" name="event3">Projet</label>
+                  <label><input type="checkbox" value="1" name="event4">Hotheads</label>
+                  <label><input type="checkbox" value="1" name="event5">Lords of stages</label>
+                  <label><input type="checkbox" value="1" name="event6">Linux</label>
+                  <label><input type="checkbox" value="1" name="event7">SalesForce</label>
+                  <label><input type="checkbox" value="1" name="event8">Android</label>
+                </div>
+
               </div>
-              <div class="form-group">
-                <label >Email :</label>
-                <input type="email" class="form-control" id="eemail" name="eemail" required>
+              
+              <div class="col-sm-4">
+
+                <div class="form-group">
+                  <label >Email :</label>
+                  <input type="email" class="form-control" id="eemail" name="eemail" >
+                </div>
+                <div class="form-group">
+                  <label >Note :</label>
+                  <textarea class="form-control" rows="2" id="enote" name="enote"></textarea>
+                </div>
               </div>
-              <div class="form-group">
-                <label >Cost :</label>
-                <input type="number" class="form-control" id="ecost" name="ecost" required>
-              </div>
+            </div>
+            <!-- Row ends here -->
               <div class="form-group">
                 <input type="hidden" class="form-control" id="formtype" name="formtype" value=1 >
               </div>
+
               <center>
               	<button type="submit" class="btn btn-primary">Submit</button>
               </center>
