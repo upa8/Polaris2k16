@@ -41,7 +41,6 @@
 
       // Add user into the database table 
       public function addStudentIntoEventTable(){
-          
           // Take form details into variables 
           // Avoid sql injections 
           $name = $_POST["ename"];
@@ -88,6 +87,12 @@
                 $query_to_add_in_db->bindValue(':event8' , $event8 , PDO::PARAM_STR);
                 $query_to_add_in_db->execute();                                                      
                 // Return something to display that we are done with adding user 
+                // Send message to user after adding into databse
+
+                $message = "You have been registered successfully in Polaris2k16";
+                $subject = "Polaris2k16 Notifications";
+                $this->sendSms($mobile, $message);
+                $this->sendEmail($email , $message , $subject);  
           }  
       }
 
@@ -325,6 +330,7 @@
       		$subject = $subject;
       		$message = $emailMessage;
       		$mailSub = $subject;
+          $body = "";
       	//	$body .=  $subject ;
       		$body .=  $message;
       		$header = 'From: ' . $mail . "\r\n";
