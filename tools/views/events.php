@@ -1,12 +1,14 @@
 <?php 
+
 	$start=0;
     $limit=10;
     $page_id = 0;
 
     if(isset($_GET['page_id'])){
-        $page_id=$_GET['page_id'];
-        $start=($page_id-1)*$limit;
+        $page_id = $_GET['page_id'];
+        $start = ($page_id-1)*$limit;
     }
+
 	if (isset($_POST["formtype"])) {
 		 $type = $_POST["formtype"];
 		 switch ($type) {
@@ -56,12 +58,18 @@
 			<!-- Add pagination as well as -->
 			<tbody>
 			<?php
+
 				$rowCount = $Polaris->getTotalEntries();
 				$total = ceil($rowCount/$limit);
+
 				$query = $Polaris->getSelectedEventStudentData($page_id);
+				
 				$count = ($page_id - 1)*10 + 1;
-				while($result = $query->fetchObject()){
+				$rowCountOnPage = 10 ;
+				while(($result = $query->fetchObject()) && ($rowCountOnPage >0)){
+					$rowCountOnPage = $rowCountOnPage - 1;
 					$color = $count % 3;
+					
 					switch ($color) {
 						case 0:
 							# code...
@@ -84,6 +92,7 @@
 					$remainingCost = $result->egcost;
 					
 					$diff = $result->ecost - $result->egcost;
+					
 					if($remainingCost == NULL){
 						$diff = 0;
 					}

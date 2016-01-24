@@ -148,15 +148,17 @@
             $event7       = isset($_POST['updateEvent7']) ?   $_POST['updateEvent7']  :0;
             $event8       = isset($_POST['updateEvent8']) ?   $_POST['updateEvent8']  :0;
             $note       = isset($_POST['updateEenote']) ?   $_POST['updateEenote']  :NULL;          
+            if($event5 == 1){
+                if($note == 1){
+                  $event5 = 1;
+                } 
+                if($note == 2){
+                  $event5 = 2;
+                } 
+            }
             $cost = $this->calculateEventCost($event1 , $event2 , $event3 , $event4 , $event5 , $event6 , $event7 , $event8 );//500;//$_POST["ecost"];
             
-          if($event5 == 1){
-              if($note == NULL){
-              $event5 = 1;
-            }  else{
-              $event5 = 2;
-            }
-          }
+            
 
             $query = $this->db_connection->prepare('UPDATE events SET ename =:ename , 
                             emobile =:emobile , eemail=:eemail,ecost=:ecost, ecollege = :ecollege,
@@ -195,12 +197,14 @@
     }
     
     public function getSelectedEventStudentData($start){
-        $start = ($start-1)*10 ;
+        
+        $start = ($start-1)*10;
         $end = $start + 10;
+
         if($this->databaseConnection()){
             $query = $this->db_connection->prepare('select * from events limit :start , :end');
             $query->bindValue(':start', $start ,PDO::PARAM_INT);
-            $query->bindValue(':end', $end ,PDO::PARAM_INT);
+            $query->bindValue(':end' , $end ,PDO::PARAM_INT);
             $query->execute();
             return $query;                
         }
@@ -391,6 +395,20 @@
                   +$event5cost*$event5 +$event6cost*$event6 +$event7cost*$event7 +$event8cost*$event8; 
           return $cost;
   }
+
+  public function analysis(){
+      
+      if($this->databaseConnection()){
+            $query = $this->db_connection->prepare('select sum(ecost) from events');
+            
+
+
+            $query->execute();
+            //Return ack to display that we have updated the user 
+        }       
+
+  }
+
 }
 
 
