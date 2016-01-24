@@ -99,7 +99,7 @@
 						                    <input type="hidden" class="form-control" id="formtype" name="formtype" value=2>
 						                  </div>
 						                  ';
-						               	  echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->eid.",\"".$result->ename."\",\"".$result->emobile."\",\"".$result->eemail."\",\"".$result->ecost."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
+						               	  echo " <button type=\"button\" onclick='updateEventStudentInfoModal(".$result->eid.",\"".$result->ename."\",\"".$result->emobile."\",\"".$result->eemail."\",\"".$result->ecost."\",\"".$result->ecollege."\",\"".$result->event1."\",\"".$result->event2."\",\"".$result->event3."\",\"".$result->event4."\",\"".$result->event5."\",\"".$result->event6."\",\"".$result->event7."\",\"".$result->event8."\",\"".$result->note."\")' class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#eventStudentInfo\">Info</button>
 						  	           			";
 						               echo '	
 						                 		             
@@ -142,12 +142,25 @@
 </div>
 
 <script>
-	function updateEventStudentInfoModal(id, name , mobile , email , cost) {		
+	function updateEventStudentInfoModal(id, name , mobile , email , cost , college , event1, event2, event3,event4,event5,event6,event7,event8,note) {		
 	    document.getElementById("updateEnumber").value = id;
 	    document.getElementById("updateEname").value = name;
+	    document.getElementById("updateCname").value = college;
 	    document.getElementById("updateEmobile").value = mobile;
+	    document.getElementById("updateEvent1").checked = (event1 == "1") ? true : false;
+	    document.getElementById("updateEvent2").checked = (event2 == "1") ? true : false;
+	    document.getElementById("updateEvent3").checked = (event3 == "1") ? true : false;
+	    document.getElementById("updateEvent4").checked = (event4 == "1") ? true : false;
+	    document.getElementById("updateEvent5").checked = (event5 == "1") ? true : false;
+	    document.getElementById("updateEvent6").checked = (event6 == "1") ? true : false;
+	    document.getElementById("updateEvent7").checked = (event7 == "1") ? true : false;
+	    document.getElementById("updateEvent8").checked = (event8 == "1") ? true : false;
+
 	    document.getElementById("updateEemail").value = email;
+	    document.getElementById("updateEenote").value = note;
+	    
 	    document.getElementById("updateEcost").value = cost;
+
 	}
 	function updatePaginationField(){
 

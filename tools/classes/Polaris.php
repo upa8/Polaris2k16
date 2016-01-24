@@ -46,7 +46,7 @@
           // Avoid sql injections 
           $name = $_POST["ename"];
           $collegeName = $_POST["ecname"];
-          $mobile = $_POST["emobile"];
+          //$mobile = $_POST["emobile"];
           $mobile       = isset($_POST['emobile']) ?   $_POST['emobile']  :NULL;
           //$email = $_POST["eemail"];
           $email       = isset($_POST['eemail']) ?   $_POST['eemail']  :NULL;
@@ -109,18 +109,48 @@
 
             if($this->databaseConnection()){
             $name = $_POST["updateEname"];
-            $mobile = $_POST["updateEmobile"];
-            $email = $_POST["updateEemail"];
-            $cost = $_POST["updateEcost"];
-            $eid = $_POST["updateEnumber"];        
+            $collegeName = $_POST["updateCname"];
+           // $mobile = $_POST["updateEmobile"];
+            //$email = $_POST["updateEemail"];
+            //$note = $_POST["updateEenote"];
+            //$cost = $_POST["updateEcost"];
+            $eid = $_POST["updateEnumber"];
+            // Now update events 
+
+            $mobile       = isset($_POST['updateEmobile']) ?   $_POST['updateEmobile']  :NULL;
+            $email       = isset($_POST['updateEemail']) ?   $_POST['updateEemail']  :NULL;
+            // Calculate the new cost
+            $cost = 500;//$_POST["ecost"];
+            $event1       = isset($_POST['updateEvent1']) ?   $_POST['updateEvent1']  :0;
+            $event2       = isset($_POST['updateEvent2']) ?   $_POST['updateEvent2']  :0;
+            $event3       = isset($_POST['updateEvent3']) ?   $_POST['updateEvent3']  :0;
+            $event4       = isset($_POST['updateEvent4']) ?   $_POST['updateEvent4']  :0;
+            $event5       = isset($_POST['updateEvent5']) ?   $_POST['updateEvent5']  :0;
+            $event6       = isset($_POST['updateEvent6']) ?   $_POST['updateEvent6']  :0;
+            $event7       = isset($_POST['updateEvent7']) ?   $_POST['updateEvent7']  :0;
+            $event8       = isset($_POST['updateEvent8']) ?   $_POST['updateEvent8']  :0;
+            $note       = isset($_POST['updateEenote']) ?   $_POST['updateEenote']  :NULL;          
             $query = $this->db_connection->prepare('UPDATE events SET ename =:ename , 
-                            emobile =:emobile , eemail=:eemail,ecost=:ecost
+                            emobile =:emobile , eemail=:eemail,ecost=:ecost, ecollege = :ecollege,
+                            event1 =:event1,event2 =:event2, event3 =:event3, event4 =:event4, 
+                            event5 =:event5, event6 =:event6, event7 =:event7, event8 =:event8,
+                            note =:note  
                             where eid =:eid');
             $query->bindValue(':eid', $eid ,PDO::PARAM_INT);
             $query->bindValue(':ename', $name ,PDO::PARAM_STR);
             $query->bindValue(':emobile', $mobile ,PDO::PARAM_STR);
             $query->bindValue(':eemail', $email ,PDO::PARAM_STR);
             $query->bindValue(':ecost', $cost ,PDO::PARAM_INT);
+            $query->bindValue(':ecollege', $collegeName ,PDO::PARAM_STR);
+            $query->bindValue(':event1', $event1 ,PDO::PARAM_STR);
+            $query->bindValue(':event2', $event2 ,PDO::PARAM_STR);
+            $query->bindValue(':event3', $event3 ,PDO::PARAM_STR);
+            $query->bindValue(':event4', $event4 ,PDO::PARAM_STR);
+            $query->bindValue(':event5', $event5 ,PDO::PARAM_STR);
+            $query->bindValue(':event6', $event6 ,PDO::PARAM_STR);
+            $query->bindValue(':event7', $event7 ,PDO::PARAM_STR);
+            $query->bindValue(':event8', $event8 ,PDO::PARAM_STR);
+            $query->bindValue(':note', $note ,PDO::PARAM_STR);
             $query->execute();
             //Return ack to display that we have updated the user 
         }
@@ -325,6 +355,10 @@
 	    $result = curl_exec ($ch); 
 	    curl_close ($ch);
 	}
+
+  public function calculateEventCost(){
+
+  }
 
 }
 

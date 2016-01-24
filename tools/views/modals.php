@@ -89,29 +89,61 @@
                   echo '<form role="form" action="events.php?page_id='.$page_id.'" method="POST">
                 ';
                 ?>
-               <div class="form-group">
+                           <!-- Row starts here --> 
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group">
                   <label >Name :</label>
-                  <input type="text" class="form-control" id="updateEname" name="updateEname">
+                  <input type="text" class="form-control" id="updateEname" name="updateEname" required>
                 </div>
                 <div class="form-group">
-                  <label >Mobile :</label>
-                  <input type="number" class="form-control" id="updateEmobile" name="updateEmobile" >
+                  <label >College Name :</label>
+                  <input type="text" class="form-control" id="updateCname" name="updateCname" required>
                 </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="form-group">
+                    <label >Mobile :</label>
+                    <input type="number" class="form-control" id="updateEmobile" name="updateEmobile" required>
+                    
+                  </div>
+                  <div class="form-group">
+                    <!-- 
+                    <label><input type="checkbox" value="1" id="updateEvent1" name="updateEvent1">Code Relay</label>
+                    -->
+
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent1" name="updateEvent1"> Code Relay</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent2" name="updateEvent2">Crack-Jack</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent3" name="updateEvent3">Projet</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent4" name="updateEvent4">Hotheads</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent5" name="updateEvent5">Lords of stages</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent6" name="updateEvent6">Linux</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent7" name="updateEvent7">SalesForce</label>
+                    <label><input type="checkbox" class="form-control" value="1" id="updateEvent8" name="updateEvent8">Android</label>
+                  </div>
+              </div>
+              
+              <div class="col-sm-4">
                 <div class="form-group">
                   <label >Email :</label>
-                  <input type="email" class="form-control" id="updateEemail" name="updateEemail" >
+                  <input type="email" class="form-control" id="updateEemail" name="updateEemail">
                 </div>
                 <div class="form-group">
-                  <label >Cost :</label>
-                  <input type="number" class="form-control" id="updateEcost" name="updateEcost" >
+                  <label >Note :</label>
+                  <textarea class="form-control" rows="2" id="updateEenote" name="updateEenote"></textarea>
                 </div>
+              </div>
+            </div>
+            <!-- Row ends here -->
                 <div class="form-group">
                   <input type="hidden" class="form-control" id="updateEnumber" name="updateEnumber">
                 </div>
                 <div class="form-group">
                   <input type="hidden" class="form-control" id="formtype" name="formtype" value=3 >
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <center>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </center>
             </form>
 	    </div>
 	    <div class="modal-footer">
