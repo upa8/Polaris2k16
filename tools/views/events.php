@@ -49,6 +49,7 @@
 		        <th>Name</th>
 		        <th>Mobile</th>
 		        <th>Cost</th>
+		        <th>Balance</th>
 		        <th>Action</th>
 		      </tr>
 		    </thead>
@@ -80,11 +81,19 @@
 					}
 					// Variable that we are not using here are 
 					// $result->eemail 
+					$remainingCost = $result->egcost;
+					
+					$diff = $result->ecost - $result->egcost;
+					if($remainingCost == NULL){
+						$diff = 0;
+					}
 
 					echo '<td>'.$count.'</td>
 						        <td>'.$result->ename.'</td>
 						        <td>'.$result->emobile.'</td>
 						        <td>'.$result->ecost.'</td>
+						        <td>'.$diff.'</td>
+						        
 						        <td>
 						        ';
 					  
@@ -151,7 +160,7 @@
 	    document.getElementById("updateEvent2").checked = (event2 == "1") ? true : false;
 	    document.getElementById("updateEvent3").checked = (event3 == "1") ? true : false;
 	    document.getElementById("updateEvent4").checked = (event4 == "1") ? true : false;
-	    document.getElementById("updateEvent5").checked = (event5 == "1") ? true : false;
+	    document.getElementById("updateEvent5").checked = (event5 == "1" || event5 == "2" ) ? true : false;
 	    document.getElementById("updateEvent6").checked = (event6 == "1") ? true : false;
 	    document.getElementById("updateEvent7").checked = (event7 == "1") ? true : false;
 	    document.getElementById("updateEvent8").checked = (event8 == "1") ? true : false;

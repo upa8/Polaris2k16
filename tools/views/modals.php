@@ -56,6 +56,10 @@
                   <label >Note :</label>
                   <textarea class="form-control" rows="2" id="enote" name="enote"></textarea>
                 </div>
+                <div class="form-group">
+                  <label >*Paid*:</label>
+                  <input type="number" class="form-control"  id="egcost" name="egcost"></input>
+                </div>
               </div>
             </div>
             <!-- Row ends here -->

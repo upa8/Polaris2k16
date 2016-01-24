@@ -59,17 +59,28 @@
           $event7       = isset($_POST['event7']) ?   $_POST['event7']  :0;
           $event8       = isset($_POST['event8']) ?   $_POST['event8']  :0;
           $note       = isset($_POST['enote']) ?   $_POST['enote']  :NULL;
+          
+          if($event5 == 1){
+              if($note == NULL){
+              $event5 = 1;
+            }  else{
+              $event5 = 2;
+            }
+          }
+          
+
           // Write logic to calculate cost of the events 
           $cost = $this->calculateEventCost($event1 , $event2 , $event3 , $event4 , $event5 , $event6 , $event7 , $event8 );
           // Logic ends here of calculating cost 
+          $paid       = isset($_POST['egcost']) ?  $_POST['egcost']  :NULL;
 
           if ($this->databaseConnection()) {
                 $query_to_add_in_db = $this->db_connection->prepare('INSERT INTO 
                           events (ename , emobile , eemail , ecost ,ecollege , note,event1 , event2 ,event3 ,event4
-                           ,event5 ,event6 ,   event7 ,event8  ,regtime) 
+                           ,event5 ,event6 ,   event7 ,event8  , egcost ,regtime) 
                           VALUES (:ename , :emobile , :eemail , :ecost , :ecollege ,:note,
                             :event1 , :event2 ,:event3 ,:event4
-                           ,:event5 ,:event6 ,   :event7 ,:event8 ,now())');
+                           ,:event5 ,:event6 ,   :event7 ,:event8 , :paid,now())');
                 $query_to_add_in_db->bindValue(':ename' , $name , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':emobile' , $mobile , PDO::PARAM_INT);
                 $query_to_add_in_db->bindValue(':eemail' , $email , PDO::PARAM_STR);
@@ -85,14 +96,17 @@
                 $query_to_add_in_db->bindValue(':event6' , $event6 , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':event7' , $event7 , PDO::PARAM_STR);
                 $query_to_add_in_db->bindValue(':event8' , $event8 , PDO::PARAM_STR);
+                // Add paid money 
+                $query_to_add_in_db->bindValue(':paid' , $paid , PDO::PARAM_STR);
                 $query_to_add_in_db->execute();                                                      
                 // Return something to display that we are done with adding user 
                 // Send message to user after adding into databse
-
+                /*
                 $message = "You have been registered successfully in Polaris2k16";
                 $subject = "Polaris2k16 Notifications";
                 $this->sendSms($mobile, $message);
-                $this->sendEmail($email , $message , $subject);  
+                $this->sendEmail($email , $message , $subject);
+                */  
           }  
       }
 
@@ -136,6 +150,14 @@
             $note       = isset($_POST['updateEenote']) ?   $_POST['updateEenote']  :NULL;          
             $cost = $this->calculateEventCost($event1 , $event2 , $event3 , $event4 , $event5 , $event6 , $event7 , $event8 );//500;//$_POST["ecost"];
             
+          if($event5 == 1){
+              if($note == NULL){
+              $event5 = 1;
+            }  else{
+              $event5 = 2;
+            }
+          }
+
             $query = $this->db_connection->prepare('UPDATE events SET ename =:ename , 
                             emobile =:emobile , eemail=:eemail,ecost=:ecost, ecollege = :ecollege,
                             event1 =:event1,event2 =:event2, event3 =:event3, event4 =:event4, 
@@ -337,7 +359,6 @@
       		$header .= 'Reply-To:  ' . $mail . "\r\n";
       		$header .= 'X-Mailer: PHP/' . phpversion();
       		mail($to, $mailSub, $body, $header);
-      	
     }
 
     public function sendSms( $moibileNumber , $textMessage){
