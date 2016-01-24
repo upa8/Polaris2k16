@@ -155,17 +155,12 @@
 	    document.getElementById("updateEvent6").checked = (event6 == "1") ? true : false;
 	    document.getElementById("updateEvent7").checked = (event7 == "1") ? true : false;
 	    document.getElementById("updateEvent8").checked = (event8 == "1") ? true : false;
-
 	    document.getElementById("updateEemail").value = email;
-	    document.getElementById("updateEenote").value = note;
-	    
+	    document.getElementById("updateEenote").value = note;	    
 	    document.getElementById("updateEcost").value = cost;
-
 	}
 	function updatePaginationField(){
-
 	}
-
 </script>
 <!-- Modals for events -->
 <?php

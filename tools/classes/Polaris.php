@@ -50,7 +50,7 @@
           $mobile       = isset($_POST['emobile']) ?   $_POST['emobile']  :NULL;
           //$email = $_POST["eemail"];
           $email       = isset($_POST['eemail']) ?   $_POST['eemail']  :NULL;
-          $cost = 500;//$_POST["ecost"];
+          //$cost = 500;//$_POST["ecost"];
           $event1       = isset($_POST['event1']) ?   $_POST['event1']  :0;
           $event2       = isset($_POST['event2']) ?   $_POST['event2']  :0;
           $event3       = isset($_POST['event3']) ?   $_POST['event3']  :0;
@@ -61,7 +61,7 @@
           $event8       = isset($_POST['event8']) ?   $_POST['event8']  :0;
           $note       = isset($_POST['enote']) ?   $_POST['enote']  :NULL;
           // Write logic to calculate cost of the events 
-
+          $cost = $this->calculateEventCost($event1 , $event2 , $event3 , $event4 , $event5 , $event6 , $event7 , $event8 );
           // Logic ends here of calculating cost 
 
           if ($this->databaseConnection()) {
@@ -120,7 +120,6 @@
             $mobile       = isset($_POST['updateEmobile']) ?   $_POST['updateEmobile']  :NULL;
             $email       = isset($_POST['updateEemail']) ?   $_POST['updateEemail']  :NULL;
             // Calculate the new cost
-            $cost = 500;//$_POST["ecost"];
             $event1       = isset($_POST['updateEvent1']) ?   $_POST['updateEvent1']  :0;
             $event2       = isset($_POST['updateEvent2']) ?   $_POST['updateEvent2']  :0;
             $event3       = isset($_POST['updateEvent3']) ?   $_POST['updateEvent3']  :0;
@@ -130,6 +129,8 @@
             $event7       = isset($_POST['updateEvent7']) ?   $_POST['updateEvent7']  :0;
             $event8       = isset($_POST['updateEvent8']) ?   $_POST['updateEvent8']  :0;
             $note       = isset($_POST['updateEenote']) ?   $_POST['updateEenote']  :NULL;          
+            $cost = $this->calculateEventCost($event1 , $event2 , $event3 , $event4 , $event5 , $event6 , $event7 , $event8 );//500;//$_POST["ecost"];
+            
             $query = $this->db_connection->prepare('UPDATE events SET ename =:ename , 
                             emobile =:emobile , eemail=:eemail,ecost=:ecost, ecollege = :ecollege,
                             event1 =:event1,event2 =:event2, event3 =:event3, event4 =:event4, 
@@ -317,49 +318,52 @@
     
     public function SendEmail($mailTo , $emailMessage , $subject){
 
-    	$to = $mailTo;
-		$siteName = "Polaris2k16.in";
-
-		$name = "Pratik Upacharya";
-		$mail = 'info@polaris2k16.in';
-		$subject = $subject;
-		$message = $emailMessage;
-
-	
-		$mailSub = $subject;
-
-		
-	//	$body .=  $subject ;
-		$body .=  $message;
-
-		$header = 'From: ' . $mail . "\r\n";
-		$header .= 'Reply-To:  ' . $mail . "\r\n";
-		$header .= 'X-Mailer: PHP/' . phpversion();
-
-		mail($to, $mailSub, $body, $header);
-	
+          $to = $mailTo;
+      		$siteName = "Polaris2k16.in";
+      		$name = "Pratik Upacharya";
+      		$mail = 'info@polaris2k16.in';
+      		$subject = $subject;
+      		$message = $emailMessage;
+      		$mailSub = $subject;
+      	//	$body .=  $subject ;
+      		$body .=  $message;
+      		$header = 'From: ' . $mail . "\r\n";
+      		$header .= 'Reply-To:  ' . $mail . "\r\n";
+      		$header .= 'X-Mailer: PHP/' . phpversion();
+      		mail($to, $mailSub, $body, $header);
+      	
     }
 
     public function sendSms( $moibileNumber , $textMessage){
-    	$mobile = $moibileNumber;//7588948588;
-	    $message = str_replace(' ', '%20', $textMessage)  ;//" Hi%20working%20sms%20api";
-	    $url = "http://smslane.com/vendorsms/pushsms.aspx?user=Pratik_Upacharya&password=polaris123!&msisdn=91".$mobile."&sid=WEBSMS&msg=".$message."&fl=0";
-	    //$this->messages[] = $url ;  
-	    $ch = curl_init();
-	    curl_setopt($ch, CURLOPT_URL, $url); 
-	    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-	    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/6.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.7) Gecko/20050414 Firefox/1.0.3");
-	    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-	    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-	    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); 
-	    $result = curl_exec ($ch); 
-	    curl_close ($ch);
+        	$mobile = $moibileNumber;//7588948588;
+    	    $message = str_replace(' ', '%20', $textMessage)  ;//" Hi%20working%20sms%20api";
+    	    $url = "http://smslane.com/vendorsms/pushsms.aspx?user=Pratik_Upacharya&password=polaris123!&msisdn=91".$mobile."&sid=WEBSMS&msg=".$message."&fl=0";
+    	    //$this->messages[] = $url ;  
+    	    $ch = curl_init();
+    	    curl_setopt($ch, CURLOPT_URL, $url); 
+    	    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    	    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/6.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.7) Gecko/20050414 Firefox/1.0.3");
+    	    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    	    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    	    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); 
+    	    $result = curl_exec ($ch); 
+    	    curl_close ($ch);
 	}
 
-  public function calculateEventCost(){
-
+  public function calculateEventCost($event1 , $event2, $event3, $event4, $event5, $event6, $event7, $event8){
+          
+          $event1cost = 150;
+          $event2cost = 200;
+          $event3cost = 500;
+          $event4cost = 200;
+          $event5cost =  50;
+          $event6cost = 400;
+          $event7cost = 400;
+          $event8cost = 400;
+          $cost = $event1cost*$event1 + $event2cost*$event2 +$event3cost*$event3 +$event4cost*$event4
+                  +$event5cost*$event5 +$event6cost*$event6 +$event7cost*$event7 +$event8cost*$event8; 
+          return $cost;
   }
-
 }
 
 

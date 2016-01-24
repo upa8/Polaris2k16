@@ -15,12 +15,9 @@ Event7
 Event 8 
 	Android 
 Polaris email accounts 
-	
 	info@polaris2k16.in
 	password: polaris123!
-
 	event@polaris2k16.in
-
 Todo 
 1) Add college in event table 
 
