@@ -19,11 +19,37 @@ Polaris email accounts
 	password: polaris123!
 	event@polaris2k16.in
 Todo 
+
 1) Add college in event table 
-
-
 http://polaris2k16.in/tools/android/androidApi.php?android=1&&name=Pr&&college=ramdeobaba&&mobile=7588948588&&email=pratikupacharya&&note=two&&event=11110000&&id=polo
 
 http://localhost/Serious%20Projects/polaris2k16//tools/android/androidApi.php?android=1&&name=Pr&&college=ramdeobaba&&mobile=7588948588&&email=pratikupacharya&&note=two&&event=11110000&&cost=200&&id=polo
 
 
+Important queries 
+
+1) Count collection of all events 
+	SELECT SUM (ecost) FROM  `events` ;
+	Result : 70600
+
+2) Count unpaid collection 
+	SELECT SUM( egcost),sum(ecost) FROM  `events` where egcost >0;
+	4950 Aane chahiye but 3100 aaye . 1850 remained .
+
+3) Select student of particular events 
+	SELECT * from `events` where `event1` = 1;
+
+	// With particular attributes
+	SELECT ename, ecollege, emobile, ecost, egcost FROM  `events` WHERE  `event1` =1 ;
+
+4) Count student of particular event 
+	SELECT count(*) from `events` where `event1` = 1;
+
+5) 
+
+
+
+// Important for sending message 
+
+$a = "Hello ";
+$b = $a . "World!"; 
