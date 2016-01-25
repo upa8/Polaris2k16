@@ -68,3 +68,59 @@ Event Entries
 
 
 // Amrin Khan
+
+// 
+1) Ayush tiwari 2(85) (aaj spot entry , not added in database )
+2) Suraj chikate 4(210) to 215 Crack jack
+
+4) Chandan Kumar 7(369) no balance (done)
+5) Slip 8 (302)  erased slip CrackJack
+6) Slip 8 (304)  erased slip HotHeads
+7) 
+
+
+
+
+
+
+
+
+
+Slip data 
+1) Slip 1   50 
+2) Slip 2   35 complete   15 remain (85 se spot entry including 85)
+3) Slip 3   251-287     13 remain
+4) Slip 4   201 - 250   end 
+5) Slip 5   451 - 500   end 
+6) Slip 6   401 - 432   remain 18
+7) Slip 7   351 - 391   remain 9 
+8) Slip 8   301 - 319   remain 31 (2 erased , 302 and 304)
+9) Slip 9   101 - 149   remain 1
+10) Slip 10 151 - 170   remain 30
+
+
+// Final entry count 
+1) Code relay  43     42 
+
+2) CrackJack   49     49   
+
+3) Projet      13     13 
+4) Hot heads   67    
+5) Lord   Single 40 Double 7
+6) Linux       48     47
+7) Sales       59     57
+8) Android     51     50
+
+Actual 
+Total 102050
+Balance 2750 
+Hard Cash  99300
+
+
+
+Manual 
+Total 
+
+total       99,900
+balance   	2800
+hard cash   97,100
