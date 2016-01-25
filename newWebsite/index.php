@@ -586,11 +586,11 @@
                 <div class="col-sm-4 col-xs-12">
                   <div class="panel panel-default myDIV text-center wow zoomInRight animated" data-wow-delay="0.15s">
                     <div class="panel-heading">
-                      <h1>Linux(Python scripting)</h1>
+                      <h1>Fun with MATLAB (Image Processing)</h1>
                     </div>
                     <div class="panel-body text">
                       <p><strong>Short Desciption :</strong>
-                       A very common item found in programming job descriptions is familiarity with Linux.</p>
+                       A workshop of two days on image processing using MATLAB.</p>
         
                       <p><strong>Time : </strong> 27 Jan 2016</p> 
                       <p><strong>Email : </strong> info@polaris2k16.in</p>
@@ -725,64 +725,56 @@
                     
                       <center>
                         <h1>
-                          Linux
+                          
                         </h1>
                         
                       </center>
                       <hr>                      
                     <p>
                       <center>
-                      "If you want to travel around the world and be invited to speak at a lot of different places, just 
-
-                      write a Unix operating system." (By Linus Torvalds)
+                      "MATLAB is a tool to rule on hardware"- Unknown
                       </center>
                       <br>
                       <ul>
-                        <li>
-                              One OS to rule them all.
-                        </li>
-                        <li>
-                              One OS to find them.
-                        </li>
-                        <li>
-                              One OS to call them all.
-                        </li>
-                        <li>
-
-                          One OS to call them all,
-                        </li>
-                        <li>
-                          And in salvation bind them.
-
-                        </li>
-                        <li>
-                            In the bright land of Linux,
-                        </li>    
-                        <li>
-                          Where the hackers play.
-                          <br><strong>- J. Scott Thayer</strong>
-                        </li>
+                         <li> It's a great pleasure to inform you that we are organizing a workshop for B.E. and M.Tech Students on fun 
+                            with MATLAB. MATLAB (matrix laboratory) is a numerical computing environment, and has a variety of applications
+                            in various fields like Image Processing, Computer Graphics, Artificial Intelligence, Machine Learning, Robotics etc.
+                            We invite you to join the program on 27th and 28th january 2016 and learn with fun.
+                         </li>
                       </ul>
 
 
-                      <strong>What is LINUX?</strong>
+                      <strong>What is MATLAB?</strong>
                       <br>
-                      Linux is a free and open source software Unix-like operating system for computers.
+                      MATLAB is a high-performance language for technical computing. It integrates computation, visualization, and programming in an easy-to-use environment where problems and solutions are expressed in familiar mathematical notation. Typical uses include:
+                       * Math and computation
+                       * Algorithm development
+                       * Modeling, simulation, and prototyping
+                       * Data analysis, exploration, and visualization
+                       * Scientific and engineering graphics
+                       * Application development, including Graphical User Interface building
+                      <br>
 
-                      The development of Linux is one of the most prominent examples of free and open-source software 
-
-                      collaboration.
+                      <strong>Program Schedule</strong>
                       <br>
-
-                      <strong>Why LINUX?</strong>
+                        <ul>
+                          <strong>Day1</strong>
+                          <li> Theory Session 1: Introduction to MATLAB, playing with matrices using Index notations, representing images as matrices</li>
+                          <li> Lab Session 1 </li>
+                          <li> Lunch Break </li>
+                          <li> Theory Session 2: Plotting in MATLAB, Plotting and animating 2D and 3D graphs.</li>
+                          <li> Lab Session 2</li>
+                        </ul>
+                        <ul>
+                          <strong>Day2</strong>
+                          <li> Theory Session 1: Introduction to Image Processing, Playing with Grayscale images, Playing with Color Images.</li>
+                          <li> Lab Session 1 </li>
+                          <li> Lunch Break </li>
+                          <li> Theory Session 2: How to interface webcam with MATLAB, Playing with real time videos.</li>
+                          <li> Lab Session 2</li>
+                        </ul>    
                       <br>
-                      A very common item found in programming job descriptions is familiarity with Linux. Adoption of Linux 
-                      is on an upward trend, and there are no signs to show that will change anytime soon.
-                      It's a different OS, with different design-philosophies, a different structure, different goals - even if you 
-                      never look at its source-code, you could still find inspiration in how all the famous and countless other 
-                      tools magically work together (the UNIX philosophy of "do one thing, well").
-                      <br>
-                      <strong>Time :</strong>Time: 27 January 2016<br>
+                      <strong>Time :</strong> 27 January and 28th January 2016<br>
                       <strong>Entry fees :</strong> Rs. 400/- per team<br>
                       <strong>Email :</strong>info@polaris2k16.in<br>
                       <strong>Contact :</strong>Shivang Gupta (+91 8698074444)<br>
@@ -811,29 +803,32 @@
                     <h1>Industry Partners</h1>
                   </center>
                 </div>
-                <div class="row ">
-                    <div class="col-sm-1">
-                    </div>
-                    <div class="col-sm-3">
-                      <a href="https://www.globallogic.com/press-releases/globallogic-opens-new-centre-in-nagpur/" target="_blank">
-                      <img src="img/sp1.png" class="img-thumbnail" width="100" height="70">
+                <div class="row">
+                  <div class="col-sm-4"></div>
+                  <div class="col-sm-4">
+                    <a href="https://www.globallogic.com/press-releases/globallogic-opens-new-centre-in-nagpur/" target="_blank">
+                      <img src="img/gb.png" class="img-thumbnail" width="100" height="70">
                       <h4>Global Logic </h4>
                       </a>
-                      
+                  </div>
+                  <div class="col-sm-4"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-2">
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <a href="http://www.pristineinfotech.co.in" target="_blank">
-                      <img src="img/sp2.png" class="img-thumbnail" width="100" height="70">
+                      <img src="img/sp2.png" class="img-thumbnail" width="100" height="50">
                       <h4>Pristine Infotech</h4>
                       </a>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                       <a href="http://www.persistent.com/" target="_blank">
-                        <img src="img/sp3.png" class="img-thumbnail" width="100" height="70">
+                        <img src="img/sp3.png" class="img-thumbnail" width="100" height="50">
                         <h4>Persistent</h4>
                       </a>
                     </div>
-                    <div class="col-sm-1.5">
+                    <div class="col-sm-2">
                     </div>
                 </div>
                 <div class="row">

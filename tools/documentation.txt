@@ -1,19 +1,19 @@
 Event1 
-	Code Relay 
+	Code Relay 150 
 Event2 
-	Crack-Jack
+	Crack-Jack 200 
 Event3
-	Projet
+	Projet 500 
 Event4
-	Hotheads
+	Hotheads  200 
 Event5
-	Lords of stages
+	Lords of stages 50 100 
 Event6
-	Cloud on linux 
+	Cloud on linux 400 
 Event7
-	SalesForce Tech
+	SalesForce Tech 400
 Event 8 
-	Android 
+	Android  400 
 Polaris email accounts 
 	info@polaris2k16.in
 	password: polaris123!
@@ -30,11 +30,11 @@ Important queries
 
 1) Count collection of all events 
 	SELECT SUM (ecost) FROM  `events` ;
-	Result : 70600
+	Result : 102450
 
 2) Count unpaid collection 
-	SELECT SUM( egcost),sum(ecost) FROM  `events` where egcost >0;
-	4950 Aane chahiye but 3100 aaye . 1850 remained .
+	SELECT sum( egcost),sum(ecost) FROM  `events` where egcost >0;
+	7050 Aane chahiye but 4250 aaye .
 
 3) Select student of particular events 
 	SELECT * from `events` where `event1` = 1;
@@ -53,3 +53,18 @@ Important queries
 
 $a = "Hello ";
 $b = $a . "World!"; 
+
+
+// Complete analysis 
+Event Entries 
+1) Event 1 =   43 
+2) Event 2 =   49
+3) Event 3 =   13
+4) Event 4 =	67
+5) Event 5 =	
+6) Event 6 =
+7) Event 7 =
+8) Event 8 =
+
+
+// Amrin Khan
