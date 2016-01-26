@@ -5,7 +5,14 @@
 <div class="row">
 	
 	<!-- Total collection -->
-		
+	<?php 
+		$mobile = 7588948588;
+		$message = "Hi";
+		$Polaris->sendSms($mobile , $message);
+		//echo $messageId;
+
+	?>
+
 	<!-- End total collection -->
 
 	<!-- Total money to collect from students -->

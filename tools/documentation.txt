@@ -9,7 +9,7 @@ Event4
 Event5
 	Lords of stages 50 100 
 Event6
-	Cloud on linux 400 
+	Cloud on linux  400 
 Event7
 	SalesForce Tech 400
 Event 8 
@@ -100,22 +100,23 @@ Slip data
 
 
 // Final entry count 
-1) Code relay  43     42 
+
+1) Code relay  43     42         1   
 
 2) CrackJack   49     49   
 
 3) Projet      13     13 
 4) Hot heads   67    
-5) Lord   Single 40 Double 7
-6) Linux       48     47
-7) Sales       59     57
-8) Android     51     50
+5) Lord        Single 40 Double 7
+6) Linux       48     47         1  Perfect  (Manual is wrong)
+7) Sales       58     56         2  
+8) Android     50     50         Perfect 
+
 
 Actual 
 Total 102050
 Balance 2750 
 Hard Cash  99300
-
 
 
 Manual 
@@ -124,3 +125,19 @@ Total
 total       99,900
 balance   	2800
 hard cash   97,100
+
+
+SalesForce 
+
+221	NULL	Trushi Nandagawali	KDK	8149213525	tnandagawali@gmail.com	400		0	0	0	0	0	0	1	0	0	
+
+Linux  
+
+
+Android 
+
+
+
+Code Relay 
+46	NULL	Ashish Rawandhe	JD	8446926474		150		1	0	0	0	0	0	0	0	0		
+54	NULL	sahil nagrare	JD	7743928482		150		1	0	0	0	0	0	0	0	0		

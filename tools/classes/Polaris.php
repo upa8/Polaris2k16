@@ -378,7 +378,9 @@
     	    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
     	    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); 
     	    $result = curl_exec ($ch); 
-    	    curl_close ($ch);
+    	    echo $result ;
+          curl_close ($ch);
+          //return $result;
 	}
 
   public function calculateEventCost($event1 , $event2, $event3, $event4, $event5, $event6, $event7, $event8){
@@ -401,13 +403,26 @@
       if($this->databaseConnection()){
             $query = $this->db_connection->prepare('select sum(ecost) from events');
             
-
+            
 
             $query->execute();
             //Return ack to display that we have updated the user 
         }       
 
   }
+
+  public function sendMessageQueries(){
+
+    if($this->databaseConnection()){
+      // Query for android 
+      $query = $this->db_connection->prepare('select * from events where event8 = 1 LIMIT 16,20');
+      $query->execute();
+      return $query;                
+       
+
+    }
+  }
+
 
 }
 
