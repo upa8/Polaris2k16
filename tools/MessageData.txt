@@ -1,22 +1,65 @@
 Android 
-1 - 5 
-The Message Id : 919096565794-9108c3b40be043d9b472b14547f27647
-The Message Id : 917385190362-c0f7e24c764e4628b6f2acbc82a06d32
-The Message Id : 919975473202-99311d3f763041588681743439c66344
-The Message Id : 917387982671-98ec7a68a9414ca591f9b21bafcc1cd2
-The Message Id : 918983506792-dbc93904810b4c6aad0c9cd492294c54
 
-6 - 15 
-The Message Id : 919970467702-b7ff19906fa545f299ad2795d4a071c9
-The Message Id : 919552310001-cffd4cd66dad47fa879b19b08e98da23
-The Message Id : 919890594133-cb2de75d354e451e8a74054753159fe6
-The Message Id : 917276111534-6d304f19273c473abbcfad629b286bc3
-Rajat Raut
-The Message Id : 918983398919-7c121c3614b44e9d80354108cb73c6de
-The Message Id : 917058877802-dc8a9ee6a4024fb094e64115d2e3e2ee
-The Message Id : 917588948588-ae3bbf0ff31446d3b3a08edf489fcacf
-The Message Id : 919767457208-57683857bc774b2cb30f1cb50730f3d0
-The Message Id : 917767035300-65abe75b0cd44694a1257925b5acc9b7
-The Message Id : 917588948588-b6c73add833a480c886887961e776565
-The Message Id : 918390631375-60af6a442923439690a9db01c4ff2ebf
-The Message Id : 918888705643-797a941a931446b180b77ef53d4697aa
+Following message to send 
+----------------------------------------------------------------------------------
+	WEBSMS	Reporting time for android workshop is 27jan 8am,Venue- Accenture Lab ,Requirement- Laptop(optional),datacable,android phone	
+----------------------------------------------------------------------------------
+Numbers to send 
+
+	919595783408	
+	918888705643	
+	918956268749	
+	919860089465	
+	919096565794
+	917385190362
+	918983506792
+	919970467702
+	918888705643
+	918484948237
+	918421614299
+	917385164890
+	919763823547
+	918421706938
+	919049337333
+	919595759789
+	918793471109
+
+
+----------------------------------------------------------------------------------------
+Salesforce
+
+Following message to send 
+---------------------------------------------------------------------------------------
+	WEBSMS	Reporting time for salesforce workshop : 27th Jan 9am onwards Venue: Lab 1 (IT Complex) Requirements: Laptop(Carry if available)
+
+---------------------------------------------------------------------------------------
+917385316755
+919405242693
+917038638860
+917066501535
+918149213525
+918493170326
+919890948834
+917385558018
+917304141808
+919764267868
+917385316755
+918956037002
+
+
+Linux 
+
+	Linux workshop changed to Matlab -Contact:+919175726744 Shivang Gupta Reporting time: 27Jan 9am Venue: IT Lab 1 Requirements: Laptop(if available)
+
+
+917840921303
+919623897159
+919561244224
+919373677773
+919175826775
+918551092153
+917387975732
+919011337700
+918149947626
+917507937334
+
