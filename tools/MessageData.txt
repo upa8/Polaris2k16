@@ -66,8 +66,7 @@ Linux
 -----------------------------------------------------------------------------
 Coderelay 
 
-	Notice: Code relay event has been postponed to 29 jan . Reporting time 12 pm . First and second round on 29 , final on 30 Jan .
-
+	Notice: Code relay event has been postponed to 29 jan . Reporting time 12 pm . First and second round on 29 , final on 30 Jan.
 
 Mobile Number
 
@@ -84,4 +83,3 @@ Mobile Number
 918446926474
 917743928482
 918983230801
-

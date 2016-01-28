@@ -141,3 +141,12 @@ Android
 Code Relay 
 46	NULL	Ashish Rawandhe	JD	8446926474		150		1	0	0	0	0	0	0	0	0		
 54	NULL	sahil nagrare	JD	7743928482		150		1	0	0	0	0	0	0	0	0		
+
+
+
+
+Feedback document
+
+1  android 
+2 salesforce
+3 matlab
