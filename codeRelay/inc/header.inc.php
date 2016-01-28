@@ -28,7 +28,10 @@
             <li><a href='logout.php'>Logout</a></li>";
           }else{/*menu when user is loggedin*/
             echo "<li><a href='login.php'>Login</a></li>
-                  <li><a href='register.php'>Register</a></li>";
+                  <!-- 
+                  <li><a href='register.php'>Register</a></li>
+                  -->
+                  ";
           }
           
         ?>
