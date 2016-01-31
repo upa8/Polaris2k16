@@ -1,10 +1,12 @@
 <?php
 	require_once("inc/header.inc.php");
 	/*send the user to login.php if he is not loggedin*/
+	/*
 	if(!isset($_SESSION['id'])){
 		header("Location: login.php");
 		exit();
 	}
+	*/
 ?>
 	<div class="container">
 		<?php

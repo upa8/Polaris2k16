@@ -1,10 +1,12 @@
 <?php require_once("inc/header.inc.php");
 
 	/*send user to index.php if he is logedin*/
+	/*
 	if(isset($_SESSION['id'])){
 		header("Location: index.php");
 		exit();
 	}
+	*/
 ?>
 <div class="container">
 	<div class="form-container">
