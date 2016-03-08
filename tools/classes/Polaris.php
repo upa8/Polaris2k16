@@ -401,11 +401,12 @@
   public function analysis(){
       
       if($this->databaseConnection()){
-            $query = $this->db_connection->prepare('select sum(ecost) from events');
             
+            $query = $this->db_connection->prepare('select * from feedback where workshop = 5');
             
-
             $query->execute();
+
+            return $query;
             //Return ack to display that we have updated the user 
         }       
 
